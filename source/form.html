@@ -41,10 +41,10 @@
       <p class="form-title__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="form" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="cat-info">
-        <label>Имя:*<input class="cat-info__name" type="text" id="cat-name" placeholder="Барсик"></label>
-        <label>Вес (кг):*<input class="cat-info__weight" type="number" id="cat-weight" placeholder="7"></label>
-        <label>Возраст (лет):<input class="cat-info__age" type="number" id="cat-age" placeholder="7"></label>
+      <fieldset class="form-input">
+        <label>Имя:*<input class="form-input__input" type="text" id="cat-name" placeholder="Барсик"></label>
+        <label>Вес (кг):*<input class="form-input__input" type="number" id="cat-weight" placeholder="7"></label>
+        <label>Возраст (лет):<input class="form-input__input" type="number" id="cat-age" placeholder="7"></label>
       </fieldset>
       <fieldset class="program">
         <label tabindex="0">
@@ -57,10 +57,10 @@
           <input class="program__radio visually-hidden" type="radio" name="program" id="idk" value="idk">Не знаю (нужен ваш совет)
         </label>
       </fieldset>
-      <fieldset class="form-contacts">
+      <fieldset class="form-input">
         <legend class="form-part-name">Контактные данные (владельца кота)</legend>
-        <label for="email">E-mail:*<input class="form-contacts__email" type="email" id="email" placeholder="kuklachev@gmail.com"></label>
-        <label for="phone">Телефон:*<input class="form-contacts__phone" type="tel" id="phone" placeholder="8 (960) 900-60-90"></label>
+        <label for="email">E-mail:*<input class="form-input__input form-input__input--email" type="email" id="email" placeholder="kuklachev@gmail.com"></label>
+        <label for="phone">Телефон:*<input class="form-input__input form-input__input--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90"></label>
       </fieldset>
       <legend class="form-part-name">Комментарий</legend>
       <textarea class="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
