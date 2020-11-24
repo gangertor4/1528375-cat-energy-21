@@ -1,9 +1,53 @@
 .page-header {
   text-transform: uppercase;
 
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 17px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    min-height: 66px;
+  }
+
   &__logo-name {
     background-image: url("../img/logo-name.svg");
     width: 101px;
     height: 18px;
+    margin-top: 11px;
+  }
+
+  &__nav-toggle {
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    width: 21px;
+    height: 23px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 11px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 1px;
+      background-color:  #000000;
+      top: 11px;
+      right: -2px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }
