@@ -1,7 +1,7 @@
 .page-header {
   text-transform: uppercase;
 
-  &__wrapper {
+  &__logo-wrapper {
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
@@ -48,6 +48,34 @@
 
     &::after {
       transform: rotate(-45deg);
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    width: 707px;
+
+     &__nav-toggle {
+      display: none;
+    }
+
+    &__logo-image {
+      margin-right: 12px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+
+     &__nav-toggle {
+      display: none;
     }
   }
 }
