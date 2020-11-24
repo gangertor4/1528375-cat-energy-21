@@ -3,7 +3,9 @@
 
   &__logo-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-content: center;
     padding-top: 10px;
     padding-bottom: 17px;
   }
@@ -55,11 +57,17 @@
 @media (min-width: @tablet-width) {
   .page-header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 707px;
+    margin: 0 auto;
 
      &__nav-toggle {
       display: none;
+    }
+
+    &__logo-wrapper {
+      padding: 0;
+      margin-top: 35px;
     }
 
     &__logo-image {
