@@ -1,0 +1,35 @@
+.footer-bottom {
+  &__logo {
+    background-image: url("../img/footer-logo.svg");
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 24px;
+    margin: 0 auto;
+    margin-top: 34px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer-bottom {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+      margin: 0;
+      margin-top: 55px;
+      margin-bottom: 61px;
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer-bottom {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
