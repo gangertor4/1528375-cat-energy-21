@@ -2,12 +2,16 @@
   background-color: #eaeaea;
   padding-top: 27px;
   padding-bottom: 25px;
+  margin-bottom: 28px;
 
-   &__title {
+  &__container {
+    .mobile-max-width();
+    margin: 0 auto;
+  }
+
+  &__title {
     .section-title();
-    margin: 0;
     padding: 0;
-    margin-left: 20px;
     margin-bottom: 33px;
   }
 
@@ -69,6 +73,11 @@
     margin-bottom: 42px;
   }
 
+  &__image {
+    width: 100%;
+    margin-right: -21px;
+  }
+
   &__slider {
     margin-top: 23px;
     display: flex;
@@ -81,12 +90,17 @@
   .example {
     background-color: #ffffff;
     padding-top: 43px;
-    border-top: 1px solid #E6E6E6;
+    border-top: 1px solid #e6e6e6;
+
+    &__container {
+      .tablet-max-width();
+      margin: 0 auto;
+    }
 
     &__title {
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 60px;
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 60px;
     }
 
     &__description {
@@ -135,14 +149,18 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    padding-top: 0;
-    margin-top: 69px;
-    border: none;
-    display: grid;
-    grid-template-areas: "title img"
-                          "desc img"
-                          "wrap img"
-                          "wrap slider";
+    &__container {
+      .desktop-max-width();
+      margin: 0 auto;
+      padding-top: 0;
+      margin-top: 69px;
+      border: none;
+      display: grid;
+      grid-template-areas: "title img"
+                            "desc img"
+                            "wrap img"
+                            "wrap slider";
+    }
 
     &__title {
       grid-area: title;

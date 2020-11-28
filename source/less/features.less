@@ -1,4 +1,6 @@
 .features {
+  .mobile-max-width();
+  margin: 0 auto;
   margin-top: 22px;
   display: flex;
   flex-direction: column;
@@ -46,11 +48,14 @@
 
 @media (min-width: @tablet-width) {
   .features {
+    .tablet-max-width();
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 
     &__item {
       width: 708px;
+      box-sizing: border-box;
       padding-top: 77px;
       padding-left: 53px;
       padding-bottom: 57px;
@@ -84,6 +89,7 @@
 
 @media (min-width: @desktop-width) {
   .features {
+    .desktop-max-width();
     display: flex;
     flex-direction: row;
     margin-bottom: 71px;

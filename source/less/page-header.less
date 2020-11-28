@@ -2,9 +2,11 @@
   text-transform: uppercase;
 
   &__logo-wrapper {
+    .mobile-max-width();
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     padding-top: 10px;
     padding-bottom: 17px;
@@ -32,6 +34,7 @@
     position: relative;
     cursor: pointer;
     margin-top: 11px;
+    margin-right: 20px;
 
     &::before,
     &::after {
@@ -39,7 +42,7 @@
       position: absolute;
       width: 25px;
       height: 1px;
-      background-color:  #000000;
+      background-color: #000000;
       top: 11px;
       right: -2px;
     }
@@ -56,16 +59,18 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
+    .tablet-max-width();
     display: flex;
     justify-content: space-between;
-    width: 707px;
     margin: 0 auto;
 
-     &__nav-toggle {
+
+    &__nav-toggle {
       display: none;
     }
 
     &__logo-wrapper {
+      margin: 0;
       padding: 0;
       margin-top: 35px;
     }
@@ -78,11 +83,11 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    .desktop-max-width();
     display: flex;
     justify-content: space-between;
-    width: 1220px;
 
-     &__nav-toggle {
+    &__nav-toggle {
       display: none;
     }
   }
