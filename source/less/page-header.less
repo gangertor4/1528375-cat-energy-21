@@ -1,9 +1,94 @@
 .page-header {
   text-transform: uppercase;
 
+  &__logo-wrapper {
+    .mobile-max-width();
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 17px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    min-height: 66px;
+  }
+
   &__logo-name {
     background-image: url("../img/logo-name.svg");
     width: 101px;
     height: 18px;
+    margin-top: 11px;
+  }
+
+  &__nav-toggle {
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    width: 21px;
+    height: 23px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 11px;
+    margin-right: 20px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 1px;
+      background-color: #000000;
+      top: 11px;
+      right: -2px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    .tablet-max-width();
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+
+    &__nav-toggle {
+      display: none;
+    }
+
+    &__logo-wrapper {
+      margin: 0;
+      padding: 0;
+      margin-top: 35px;
+    }
+
+    &__logo-image {
+      margin-right: 12px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    .desktop-max-width();
+    display: flex;
+    justify-content: space-between;
+
+    &__nav-toggle {
+      display: none;
+    }
   }
 }
