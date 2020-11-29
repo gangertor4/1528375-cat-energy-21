@@ -1,7 +1,53 @@
 .form-title {
+  .mobile-max-width();
+  margin: 0 auto;
+
+  &__title {
+    .section-title();
+    margin-bottom: 37px;
+  }
+
   &__subtitle {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    width: 226px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-title {
+    .tablet-max-width();
+    margin: 0 auto;
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 30px;
+      width: 323px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-title {
+    .desktop-max-width();
+    margin: 0 auto;
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 30px;
+      width: 323px;
+      margin-bottom: 66px;
+    }
   }
 }
