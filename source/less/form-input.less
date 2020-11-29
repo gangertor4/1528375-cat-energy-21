@@ -46,6 +46,10 @@
       font-size: 20px;
       line-height: 30px;
     }
+
+    &--contacts {
+      margin-bottom: 65px;
+    }
   }
 }
 
@@ -56,15 +60,25 @@
     &--cat-info {
       label {
         width: 570px;
+        margin-bottom: 20px;
+        margin-right: 78px;
       }
     }
 
     &--contacts {
+      flex: 1;
       display: flex;
       flex-direction: row;
+      margin: 0;
+      margin-bottom: 69px;
 
       label {
+        margin-top: 86px;
         width: 570px;
+      }
+
+      label:not(:last-child) {
+        margin-right:80px;
       }
     }
   }

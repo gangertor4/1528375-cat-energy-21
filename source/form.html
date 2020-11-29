@@ -19,25 +19,25 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a>
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a>
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page-main">
     <div class="form-title">
@@ -66,20 +66,22 @@
         <label for="email">E-mail:*<input class="form-input__input form-input__input--email" type="email" id="email" placeholder="kuklachev@gmail.com"></label>
         <label for="phone">Телефон:*<input class="form-input__input form-input__input--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90"></label>
       </fieldset>
-      <fieldset>
+      <fieldset class="about-cat">
         <legend class="form-part-name">Комментарий</legend>
-        <textarea class="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="about-cat__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="additional">
-        <legend class="form-part-name">Дополнительно</legend>
+        <legend class="form-part-name additional__title">Дополнительно</legend>
         <label><input class="additional__checkbox visually-hidden" type="checkbox" id="alt-sugar" value="alt-sugar" name="additional" checked>Сахарозаменитель</label>
         <label><input class="additional__checkbox visually-hidden" type="checkbox" id="water" value="water" name="additional">Питьевая вода</label>
         <label><input class="additional__checkbox visually-hidden" type="checkbox" id="milk" value="milk" name="additional">Молоко</label>
         <label><input class="additional__checkbox visually-hidden" type="checkbox" id="vitamins" value="vitamins" name="additional">Витамины</label>
       </fieldset>
-      <button class="submit-form button" type="submit">Отправить заявку</button>
+      <div class="form-bottom">
+        <button class="submit-form button form-bottom__button" type="submit">Отправить заявку</button>
+        <span class="footnote form-bottom__footnote">* - Обязательные поля</span>
+      </div>
     </form>
-    <span class="footnote">* - Обязательные поля</span>
   </main>
   <footer class="page-footer">
     <div class="contacts">
@@ -109,6 +111,5 @@
     </div>
   </footer>
 </body>
-
 
 </html>
