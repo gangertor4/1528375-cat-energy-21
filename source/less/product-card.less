@@ -1,13 +1,38 @@
 .product-card {
+  .mobile-max-width();
+  margin: 0 auto;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
+  display: grid;
+  grid-template-areas: "img title" "img list" "btn btn";
+  margin-bottom: 25px;
+
+  &__image {
+    grid-area: img;
+    justify-self: center;
+    align-self: center;
+  }
 
   &__title {
+    grid-area: title;
+    width: 76px;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: #222222;
     text-transform: uppercase;
+    margin-left: 36px;
+  }
+
+  &__feature-list {
+    grid-area: list;
+    justify-self: end;
+    width: 142px;
+  }
+
+  &__feature-list tr {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__feature {
@@ -15,5 +40,89 @@
     font-size: 12px;
     line-height: 16px;
     color: #444444;
+  }
+
+  &__buy-button {
+    grid-area: btn;
+    margin-top: 22px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .product-card {
+    width: 324px;
+    min-height: 511px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    margin-bottom: 59px;
+    background-color: #f2f2f2;
+
+    &__title {
+      width: 150px;
+      margin: 0;
+      margin-top: 34px;
+      margin-bottom: 21px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__feature-list {
+      width: 247px;
+    }
+
+    &__feature-list tr {
+      padding-bottom: 9px;
+      margin-top: 5px;
+      border-bottom: 1px solid #cdcdcd;
+    }
+
+    &__feature {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    &__buy-button {
+      width: 248px;
+      min-height: 39px;
+    }
+
+    &__more {
+      width: 324px;
+      height: 429px;
+      border: 2px solid #f2f2f2
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-card {
+    width: 245px;
+
+    &__title {
+      margin-top: 46px;
+    }
+
+    &__feature-list {
+      width: 169px;
+    }
+
+    &__buy-button {
+      width: 168px;
+      min-height: 40px;
+    }
+
+    &__more {
+      width: 245px;
+      min-height: 430px;
+    }
   }
 }

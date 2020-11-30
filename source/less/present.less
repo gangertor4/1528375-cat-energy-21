@@ -1,10 +1,55 @@
 .present {
+  .mobile-max-width();
+  min-height: 289px;
   background-color: green;
+  margin-bottom: 77px;
+  padding-bottom: 43px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
   &__slogan {
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
+    width: 161px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .present {
+    .tablet-max-width();
+    min-height: 200px;
+    margin-top: 69px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 0;
+    padding-right: 124px;
+    box-sizing: border-box;
+
+    &__slogan {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .present {
+    grid-area: present;
+    width: 245px;
+    margin: 0;
+    justify-self: end;
+    padding: 0;
+    padding-bottom: 43px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
 }
