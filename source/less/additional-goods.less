@@ -27,12 +27,8 @@
 @media (min-width: @desktop-width) {
   .additional-goods {
     .desktop-max-width();
-    min-height: 288px;
-    display: grid;
-    grid-template-areas: "title title" "card1 present" "card2 present" "card3 present" "card4 present";
-
-    &__title {
-      grid-area: title;
-    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
