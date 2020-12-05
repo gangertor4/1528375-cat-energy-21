@@ -116,7 +116,13 @@
           </ul>
           <p class="example__cash">Затраты на питание: 15 000 руб </p>
         </div>
-        <img class="example__image" src="../img/before-mobile.png" srcset="../img/before-mobile@2x.png 2x" width="311" height="232" alt="Толстенький кот Борис">
+        <div class="example__image-wrapper">
+          <picture>
+            <source media="(min-width: 768px)" srcset="../img/before-desktop.png 1x, ../img/before-desktop@2x.png 2x">
+            <img class="example__image example__image--before" src="../img/before-mobile.png" srcset="../img/before-mobile@2x.png 2x" width="311" height="232" alt="Толстенький кот Борис">
+          </picture>
+          <img class="example__image example__image--after" src="../img/after-desktop.png" srcset="../img/after-desktop@2x.png 2x" width="354" height="607">
+        </div>
         <div class="example__slider slider">
           <span class="slider__description">Было</span>
           <div class="slider__bar"></div>
