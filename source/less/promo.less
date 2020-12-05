@@ -1,9 +1,10 @@
 .promo {
   font-family: "Oswald", sans-serif;
-  // background-image: url("../img/index-background-desktop.png");
-  background-color: fade(#68b738, 85%);
+  //background-image: url("../img/index-background-desktop.png");
+  background: url("../img/index-background-desktop.png"), linear-gradient(180deg, rgba(104,183,56,1) 0%, rgba(104,183,56,1) 61%, rgba(255,255,255,1) 61%);
+  //background-color: fade(#68b738, 85%);
   background-repeat: no-repeat;
-  // background-blend-mode: soft-light;
+  background-blend-mode: soft-light;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +28,12 @@
     line-height: 14px;
     text-transform: uppercase;
     color: #ffffff;
+    margin-bottom: 29px;
+  }
+
+  &__link {
+    width: 280px;
+    height: 40px;
   }
 }
 
@@ -37,6 +44,7 @@
     align-items: flex-start;
     background-color: #ffffff;
     .tablet-max-width();
+    position: relative;
 
     &__name {
       font-weight: normal;
@@ -45,21 +53,30 @@
       color: #000000;
       width: 414px;
       text-align: left;
+      margin-left: 88px;
     }
 
     &__slogan {
       font-size: 20px;
       line-height: 20px;
       color: #000000;
+      margin-left: 88px;
     }
 
     &__image {
-      display: none;
-      //пока без картинки обойдёмся
+      width: 709px;
+      height: 609px;
     }
 
     &__link {
+      width: 244px;
+      min-height: 54px;
+      font-size: 20px;
+      line-height: 20px;
       margin-bottom: 526px;
+      position: absolute;
+      top: 260px;
+      left: 88px;
     }
   }
 }
@@ -67,15 +84,37 @@
 @media (min-width: @desktop-width) {
   .promo {
     .desktop-max-width();
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    display: grid;
+    // grid-template-areas: "name img" "slogan img" "link img";
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(3, min-content);
     background-color: #ffffff;
     padding-top: 111px;
     margin-left: 45px;
+    position: relative;
+
+    &::after {
+      display: none;
+      content: "";
+      position: absolute;
+      width: 720px;
+      height: 694px;
+      background-image: url("../img/index-background-desktop 1.png");
+      background-color: #68b738;
+      background-repeat: no-repeat;
+      background-blend-mode: soft-light;
+      top: -128px;
+      right: -110px;
+    }
 
 
     &__name {
+      // grid-area: name;
+      grid-row-start: 1;
+      grid-row-end: 2;
       font-weight: normal;
       font-size: 60px;
       line-height: 60px;
@@ -83,14 +122,32 @@
     }
 
     &__slogan {
+      // grid-area: slogan;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
       font-size: 20px;
       line-height: 20px;
       color: #000000;
     }
 
-    &__link {
-      margin-top: 52px;
+    &__image {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      // grid-area: img;
+      width: 552px;
+      height: 499px;
+    }
 
+    &__link {
+      // grid-area: link;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      position: static;
+      margin-top: 52px;
       margin-bottom: 267px;
     }
   }
