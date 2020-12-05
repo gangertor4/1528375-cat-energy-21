@@ -39,11 +39,11 @@
 
 @media (min-width: @tablet-width) {
   .promo {
+    .tablet-max-width();
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background: none;
-    .tablet-max-width();
     position: relative;
 
     &__name {
@@ -96,7 +96,6 @@
     position: relative;
 
     &::after {
-      // display: none;
       content: "";
       position: absolute;
       width: 720px;
@@ -106,7 +105,7 @@
       background-repeat: no-repeat;
       background-blend-mode: soft-light;
       top: -128px;
-      right: -110px;
+      right: -175px;
       z-index: -1;
     }
 
@@ -123,6 +122,7 @@
 
     &__slogan {
       // grid-area: slogan;
+      width: 283px;
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 2;
@@ -149,6 +149,7 @@
       position: static;
       margin-top: 52px;
       margin-bottom: 267px;
+      margin-left: 80px;
     }
   }
 }

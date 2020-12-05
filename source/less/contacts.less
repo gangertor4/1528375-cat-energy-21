@@ -4,8 +4,6 @@
   display: grid;
   grid-template-rows: min-content 1fr;
   grid-template-columns: 160px 160px;
-  // margin-left: 20px;
-  // margin-right: 20px;
 
   &__title {
     grid-column-start: 1;
@@ -44,26 +42,34 @@
 
 @media (min-width: @tablet-width) {
   .contacts {
-    .tablet-max-width();
-    margin: 0 auto;
+    max-width: 768px;
+    // margin: 0 auto;
     display: grid;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: 201px 1fr;
     grid-template-columns: repeat(2, calc(708px / 2));
 
     &__title {
+      grid-area: 1 / 1 / 2 / 2;
       width: 171px;
+      margin: 0;
+      margin-left: 71px;
+      align-self: center;
     }
 
     &__address {
+      grid-area: 1 / 2 / 2 / 3;
       justify-self: end;
+      align-self: center;
       margin: 0;
       width: 160px;
       text-align: right;
     }
 
-    // &__map {
-    //   grid-row: 1 / 3;
-    // }
+    &__map {
+      grid-area: 2 / 1 / 3 / 3;
+      width: 768px;
+      height: 400px;
+    }
   }
 }
 
@@ -74,9 +80,17 @@
     justify-content: space-around;
     width: 570px;
     padding: 63px 89px 52px 76px;
+    position: relative;
+    min-height: 400px;
+    background-color: #ffffff;
 
     &__map {
-      display: none;
+      position: absolute;
+      width: 1440px;
+      height: 400px;
+      top: 75px;
+      left: 0;
+      z-index: -1;
     }
 
     &__title {
