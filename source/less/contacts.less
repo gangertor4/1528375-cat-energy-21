@@ -1,13 +1,15 @@
 .contacts {
   max-width: 320px;
   margin: 0 auto;
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  grid-template-columns: 160px 160px;
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__title {
-    grid-column-start: 1;
-    grid-column-end: 2;
     font-size: 16px;
     font-weight: normal;
     line-height: 18px;
@@ -19,8 +21,6 @@
   }
 
   &__address {
-    grid-column-start: 2;
-    grid-column-end: 3;
     font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -31,42 +31,33 @@
     padding: 0;
     margin-right: 20px;
   }
-
-  &__map {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
     max-width: 768px;
-    // margin: 0 auto;
-    display: grid;
-    grid-template-rows: 201px 1fr;
-    grid-template-columns: repeat(2, calc(708px / 2));
+
+    &__wrapper {
+      min-height: 201px;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     &__title {
-      grid-area: 1 / 1 / 2 / 2;
       width: 171px;
       margin: 0;
       margin-left: 71px;
-      align-self: center;
     }
 
     &__address {
-      grid-area: 1 / 2 / 2 / 3;
-      justify-self: end;
-      align-self: center;
       margin: 0;
+      margin-right: 72px;
       width: 160px;
       text-align: right;
     }
 
     &__map {
-      grid-area: 2 / 1 / 3 / 3;
+      // grid-area: 2 / 1 / 3 / 3;
       width: 768px;
       height: 400px;
     }
@@ -75,22 +66,27 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    width: 570px;
-    padding: 63px 89px 52px 76px;
+    max-width: 1440px;
+    display: block;
     position: relative;
     min-height: 400px;
     background-color: #ffffff;
 
-    &__map {
+    &__wrapper {
       position: absolute;
+      z-index: 1;
+      background-color: #ffffff;
+      width: 570px;
+      height: 201px;
+      top: 95px;
+      left: 110px;
+    }
+
+
+    &__map {
+      margin: 0 auto;
       width: 1440px;
       height: 400px;
-      top: 75px;
-      left: 0;
-      z-index: -1;
     }
 
     &__title {
