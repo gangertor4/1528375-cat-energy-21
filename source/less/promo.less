@@ -1,7 +1,7 @@
 .promo {
   font-family: "Oswald", sans-serif;
   //background-image: url("../img/index-background-desktop.png");
-  background: url("../img/index-background-desktop.png"), linear-gradient(180deg, rgba(104,183,56,1) 0%, rgba(104,183,56,1) 61%, rgba(255,255,255,1) 61%);
+  background: url("../img/index-background-desktop.png"), linear-gradient(180deg, rgba(104, 183, 56, 1) 0%, rgba(104, 183, 56, 1) 61%, rgba(255, 255, 255, 1) 61%);
   //background-color: fade(#68b738, 85%);
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
@@ -84,13 +84,9 @@
 @media (min-width: @desktop-width) {
   .promo {
     .desktop-max-width();
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-start;
-    display: grid;
-    // grid-template-areas: "name img" "slogan img" "link img";
-    grid-template-columns: repeat(2, min-content);
-    grid-template-rows: repeat(3, min-content);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding-top: 111px;
     margin-left: 45px;
     position: relative;
@@ -104,16 +100,13 @@
       background-color: #68b738;
       background-repeat: no-repeat;
       background-blend-mode: soft-light;
-      top: -128px;
+      top: -120px;
       right: -175px;
       z-index: -1;
     }
 
 
     &__name {
-      // grid-area: name;
-      grid-row-start: 1;
-      grid-row-end: 2;
       font-weight: normal;
       font-size: 60px;
       line-height: 60px;
@@ -121,29 +114,22 @@
     }
 
     &__slogan {
-      // grid-area: slogan;
       width: 283px;
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 3;
       font-size: 20px;
       line-height: 20px;
       color: #000000;
     }
 
     &__image {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 4;
-      // grid-area: img;
       width: 552px;
       height: 499px;
+      position: absolute;
+      top: 30px;
+      right: 155px;
     }
 
     &__link {
-      // grid-area: link;
+      position: static;
       grid-row-start: 3;
       grid-row-end: 4;
       position: static;
