@@ -32,6 +32,32 @@
     margin-left: 80px;
     padding: 0;
     width: 198px;
+    position: relative;
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: -80px;
+  }
+
+  &__item--nutrients::before {
+    background-image: url("../img/icon-leaf-mobile.svg");
+  }
+
+  &__item--powder::before {
+    background-image: url("../img/icon-water-mobile.svg");
+  }
+
+  &__item--exchange::before {
+    background-image: url("../img/icon-eat-mobile.svg");
+  }
+
+  &__item--result::before {
+    background-image: url("../img/icon-clock-mobile.svg");
   }
 }
 
@@ -46,22 +72,83 @@
       line-height: 60px;
       margin: 0;
       padding: 0;
-      margin-bottom: 183px;
     }
 
     &__list {
       width: 707px;
       margin: 0 auto;
       display: grid;
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      margin-bottom: 104px;
+      grid-template-rows: repeat(2, 280px);
+      grid-template-columns: repeat(2, 230px);
+      grid-column-gap: 153px;
+      grid-row-gap: 37px;
+      margin-bottom: 47px;
     }
 
     &__item {
+      margin: 0;
+      justify-self: start;
       font-size: 16px;
       line-height: 24px;
-      width: 245px;
+      // width: 245px;
+      position: relative;
+    }
+
+    &__item::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -111px;
+      left: 0;
+    }
+
+    &__item--nutrients::before {
+      background-image: url("../img/icon-leaf.svg");
+    }
+
+    &__item--powder::before {
+      background-image: url("../img/icon-water.svg");
+    }
+
+    &__item--exchange::before {
+      background-image: url("../img/icon-eat.svg");
+    }
+
+    &__item--result::before {
+      background-image: url("../img/icon-clock.svg");
+    }
+
+    &__item::after {
+      content: "";
+      position: absolute;
+      width: 134px;
+      height: 280px;
+      top: -25px;
+      right: -33px;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      color: #f2f2f2;
+    }
+
+    &__item--nutrients::after {
+      content: "1";
+      z-index: -1;
+    }
+
+    &__item--powder::after {
+      content: "2";
+      z-index: -1;
+    }
+
+    &__item--exchange::after {
+      content: "3";
+      z-index: -1;
+    }
+
+    &__item--result::after {
+      content: "4";
+      z-index: -1;
     }
   }
 }
@@ -78,7 +165,7 @@
     }
 
     &__list {
-      width: 1224px;
+      width: 1220px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;

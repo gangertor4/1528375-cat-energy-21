@@ -1,5 +1,4 @@
 .main-nav {
-  background-color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -51,11 +50,18 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    margin-top: 69px;
+
     &__list {
+      margin-top: 0;
       max-width: 480px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+    }
+
+    &__item a {
+      color: #ffffff;
     }
   }
 }

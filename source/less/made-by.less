@@ -2,20 +2,40 @@
   .mobile-max-width();
   margin: 0 auto;
   margin-top: 28px;
-  margin-bottom: 32px;
 
   &__name {
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #444444;
+    position: relative;
+  }
+
+  &__name::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/logo_html.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -168px;
+    top: -5px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .made-by {
+    max-width: 163px;
     min-height: 34px;
     margin: 0;
-    margin-top: 55px;
+
+    &__name {
+      margin-right: 49px;
+    }
+
+    &__name::after {
+      right: -49px;
+    }
   }
 }
