@@ -24,6 +24,31 @@
     box-sizing: border-box;
     border: 1px solid #e7e7e7;
   }
+
+  &__input--email,
+  &__input--phone {
+    position: relative;
+  }
+
+  &__icon-email {
+    width: 20px;
+    height: 14.05px;
+    position: absolute;
+    background-image: url("../img/form/icon_email.svg");
+    background-repeat: no-repeat;
+    top: 16px;
+    right: 16px;
+  }
+
+  &__icon-phone {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url("../img/form/icon_phone.svg");
+    background-repeat: no-repeat;
+    top: 13px;
+    right: 13px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -47,6 +72,19 @@
 
     &--contacts {
       margin-bottom: 65px;
+    }
+
+    &__icon-email {
+      width: 18px;
+      height: 13px;
+      background-size: contain;
+      top: 19px;
+      right: 19px;
+    }
+
+    &__icon-phone {
+      top: 15px;
+      right: 17px;
     }
   }
 }
