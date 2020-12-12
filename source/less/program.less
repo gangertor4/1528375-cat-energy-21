@@ -15,6 +15,33 @@
     color: #222222;
     margin-bottom: 25px;
     margin-left: 66px;
+    cursor: pointer;
+  }
+
+  &__radio {
+    position: relative;
+  }
+
+  &__radio::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/form/radio.svg");
+    top: -21px;
+    left: -45px
+  }
+
+  &__radio:checked::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/form/radio_checked.svg");
+    top: -21px;
+    left: -45px
   }
 }
 
