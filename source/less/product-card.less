@@ -7,7 +7,7 @@
   grid-template-areas: "img title" "img list" "btn btn";
   margin-bottom: 25px;
 
-  &__image {
+  &__image-wrapper {
     grid-area: img;
     justify-self: center;
     align-self: center;
@@ -57,19 +57,43 @@
   .product-card {
     width: 324px;
     min-height: 511px;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     border: none;
     margin-bottom: 59px;
-    background-color: #f2f2f2;
+    background: linear-gradient(180deg, #ffffff 16%, #f2f2f2 16%);
+
+    &__image-wrapper {
+      max-height: auto;
+      margin-bottom: 34px;
+    }
+
+    &__image--small {
+      width: 161px;
+      height: 172px;
+      margin-top: 36px;
+    }
+
+    &__image--large {
+      width: 168px;
+      height: 200px;
+      margin-top: 8px;
+    }
+
+    &__image--medium {
+      width: 163px;
+      height: 174px;
+      margin-top: 34px;
+    }
 
     &__title {
       width: 150px;
       margin: 0;
-      margin-top: 34px;
-      margin-bottom: 21px;
+      // margin-top: 34px;
+      margin-bottom: 16px;
       text-align: center;
       font-size: 20px;
       line-height: 24px;
@@ -77,6 +101,7 @@
 
     &__feature-list {
       width: 247px;
+      margin-bottom: 32px;
     }
 
     &__feature-list tr {
@@ -91,6 +116,7 @@
     }
 
     &__buy-button {
+      margin: 0;
       width: 248px;
       min-height: 39px;
     }
@@ -106,6 +132,24 @@
 @media (min-width: @desktop-width) {
   .product-card {
     width: 245px;
+    min-height: 512px;
+    box-sizing: border-box;
+    // padding-bottom: 40px;
+
+    &__image-wrapper {
+      max-width: 172px;
+      margin-bottom: 0;
+    }
+
+    &__image--small {
+      margin-top: 30px;
+    }
+
+    &__image--large {
+      width: 172px;
+      height: 196px;
+      margin-top: 1px;
+    }
 
     &__title {
       margin-top: 46px;
@@ -113,16 +157,14 @@
 
     &__feature-list {
       width: 169px;
+      margin-top: 20.81px;
+      margin-bottom: 33px;
     }
 
     &__buy-button {
+      margin: 0;
       width: 168px;
       min-height: 40px;
-    }
-
-    &__more {
-      width: 245px;
-      min-height: 430px;
     }
   }
 }
