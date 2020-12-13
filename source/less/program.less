@@ -15,11 +15,39 @@
     color: #222222;
     margin-bottom: 25px;
     margin-left: 66px;
+    cursor: pointer;
+  }
+
+  &__radio {
+    position: relative;
+  }
+
+  &__radio::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/form/radio.svg");
+    top: -21px;
+    left: -45px;
+  }
+
+  &__radio:checked::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/form/radio_checked.svg");
+    top: -21px;
+    left: -45px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .program {
+    width: 630px;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
@@ -37,14 +65,18 @@
       margin-bottom: 23px;
       margin-left: 88px;
     }
+
+    &__radio {
+      top: -3px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .program {
+    min-height: 200px;
     border: 1px solid #d9d9d9;
     margin: 0;
-    height: 200px;
     box-sizing: border-box;
     margin-bottom: 65px;
 

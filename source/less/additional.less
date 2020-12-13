@@ -10,12 +10,40 @@
     color: #000000;
     margin-bottom: 25px;
     margin-left: 46px;
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    position: relative;
+  }
+
+  &__checkbox::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/form/checkbox.svg");
+    top: -21px;
+    left: -45px;
+  }
+
+  &__checkbox:checked::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/form/tick.svg");
+    top: -19px;
+    left: -43px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .additional {
-    width: 565px;
+    max-width: 565px;
+    padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -23,7 +51,6 @@
     &__title {
       margin-bottom: 62px;
     }
-
 
     label {
       font-size: 20px;
