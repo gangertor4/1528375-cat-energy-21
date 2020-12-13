@@ -1,13 +1,28 @@
 .present {
   .mobile-max-width();
   min-height: 289px;
-  background-color: green;
+  background-color: #68b738;
+  background-image: url("../img/catalog/present_bg.png");
+  background-repeat: no-repeat;
   margin-bottom: 77px;
   padding-bottom: 43px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/catalog/icon_gift.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 58px;
+    left: 101px;
+  }
 
   &__slogan {
     font-family: "Arial", sans-serif;
@@ -16,12 +31,14 @@
     color: #ffffff;
     width: 161px;
     text-align: center;
+    margin: 0;
   }
 }
 
 @media (min-width: @tablet-width) {
   .present {
     .tablet-max-width();
+    background-image: url("../img/catalog/present_tablet_bg.png");
     min-height: 200px;
     margin-top: 69px;
     display: flex;
@@ -32,9 +49,19 @@
     padding-right: 124px;
     box-sizing: border-box;
 
+    &::before {
+      width: 80px;
+      height: 82.57px;
+      top: 57px;
+      left: 78px;
+    }
+
     &__slogan {
       font-size: 16px;
       line-height: 20px;
+      width: 161px;
+      min-height: 60px;
+      text-align: left;
     }
   }
 }
@@ -42,13 +69,23 @@
 @media (min-width: @desktop-width) {
   .present {
     width: 245px;
+    background-image: url("../img/catalog/present_desktop_bg.png");
     margin: 0;
     margin-left: 79px;
     padding: 0;
-    padding-bottom: 43px;
+    padding-bottom: 42.16px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    &::before {
+      top: 56px;
+      left: 84px;
+    }
+
+    &__slogan {
+      text-align: center;
+    }
   }
 }

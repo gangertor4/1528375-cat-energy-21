@@ -55,7 +55,7 @@
 
 @media (min-width: @tablet-width) {
   .product-card {
-    min-width: 324px;
+    width: 324px;
     min-height: 511px;
     margin: 0;
     display: flex;
@@ -131,10 +131,14 @@
 
 @media (min-width: @desktop-width) {
   .product-card {
-    min-width: 245px;
+    width: 245px;
+    min-height: 512px;
+    box-sizing: border-box;
+    // padding-bottom: 40px;
 
     &__image-wrapper {
-
+      max-width: 172px;
+      margin-bottom: 0;
     }
 
     &__image--small {
@@ -153,16 +157,14 @@
 
     &__feature-list {
       width: 169px;
+      margin-top: 20.81px;
+      margin-bottom: 33px;
     }
 
     &__buy-button {
+      margin: 0;
       width: 168px;
       min-height: 40px;
-    }
-
-    &__more {
-      width: 245px;
-      min-height: 430px;
     }
   }
 }
