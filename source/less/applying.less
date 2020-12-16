@@ -14,7 +14,7 @@
     list-style: none;
     width: 280px;
     padding: 0;
-    min-height: 323px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -29,10 +29,15 @@
     color: #444444;
     margin: 0;
     margin-bottom: 20px;
-    margin-left: 80px;
+    margin-left: 0px;
     padding: 0;
     width: 198px;
+    min-height: 60px;
     position: relative;
+  }
+
+  &__item--result {
+    margin-bottom: 0;
   }
 
   &__item::before {

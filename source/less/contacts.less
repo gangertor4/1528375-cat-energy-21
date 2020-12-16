@@ -5,8 +5,11 @@
   flex-direction: column;
 
   &__wrapper {
+    box-sizing: border-box;
+    min-height: 114px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__title {
@@ -14,9 +17,10 @@
     font-weight: normal;
     line-height: 18px;
     text-transform: uppercase;
+    width: 140px;
     margin: 0;
     padding: 0;
-    margin-bottom: 22px;
+    // margin-bottom: 22px;
     margin-left: 20px;
   }
 
@@ -27,6 +31,7 @@
     font-size: 14px;
     line-height: 20px;
     color: #444444;
+    width: 140px;
     margin: 0;
     padding: 0;
     margin-right: 20px;
