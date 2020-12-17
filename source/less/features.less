@@ -86,8 +86,18 @@
     left: 104px;
   }
 
-  &__link:hover::after {
+  &__link:hover::after,
+  &__link:focus::after {
     background-image: url("../img/icon_arrow-hover.svg");
+  }
+
+  &__link:active {
+    opacity: 0.3;
+  }
+  
+  &__link:active::after {
+    background-image: url("../img/icon_arrow-hover.svg");
+    opacity: 0.3;
   }
 }
 

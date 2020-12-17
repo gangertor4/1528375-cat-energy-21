@@ -28,7 +28,9 @@
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url("../img/form/radio.svg");
+    // background-image: url("../img/form/radio.svg");
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
     top: -21px;
     left: -45px;
   }
@@ -42,6 +44,16 @@
     background-image: url("../img/form/radio_checked.svg");
     top: -21px;
     left: -45px;
+  }
+
+  &__radio:hover::before,
+  &__radio:focus::before {
+    border-color: #bababa;
+  }
+
+  &__radio:disabled+span,
+  &__radio:disabled:before {
+    opacity: 0.3;
   }
 }
 

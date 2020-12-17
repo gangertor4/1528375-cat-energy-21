@@ -23,6 +23,25 @@
     min-height: 45px;
     box-sizing: border-box;
     border: 1px solid #e7e7e7;
+    outline: none;
+  }
+
+  &__input::-webkit-outer-spin-button,
+  &__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+  &__input:hover {
+    border-color: #cdcdcd;
+  }
+
+  &__input:focus {
+    border: 2px solid #444444;
+  }
+
+  &__input:invalid {
+    border: 2px solid #ff8282;
   }
 
   &__input--email,

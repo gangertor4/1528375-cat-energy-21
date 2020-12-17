@@ -23,7 +23,8 @@
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url("../img/form/checkbox.svg");
+    // background-image: url("../img/form/checkbox.svg");
+    border: 1px solid #cdcdcd;
     top: -21px;
     left: -45px;
   }
@@ -37,6 +38,16 @@
     background-image: url("../img/form/tick.svg");
     top: -19px;
     left: -43px;
+  }
+
+  &__checkbox:hover::before,
+  &__checkbox:focus::before {
+    border-color: #bababa;
+  }
+
+  &__checkbox:disabled+span,
+  &__checkbox:disabled:before {
+    opacity: 0.3;
   }
 }
 
