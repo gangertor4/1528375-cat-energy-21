@@ -44,8 +44,8 @@
     border: 2px solid #ff8282;
   }
 
-  &__input--email,
-  &__input--phone {
+  &__email,
+  &__phone {
     position: relative;
   }
 
@@ -59,6 +59,10 @@
     right: 16px;
   }
 
+  &__input--email:focus+&__icon-email {
+    background-image: url("../img/form/icon_email_active.svg");
+  }
+
   &__icon-phone {
     width: 20px;
     height: 20px;
@@ -67,6 +71,10 @@
     background-repeat: no-repeat;
     top: 13px;
     right: 13px;
+  }
+
+  &__input--phone:focus+&__icon-phone {
+    background-image: url("../img/form/icon_phone_active.svg");
   }
 }
 
@@ -106,7 +114,7 @@
       right: 17px;
     }
 
-    &__input--email {
+    &__email {
       margin-top: 86px;
     }
   }
