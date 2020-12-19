@@ -1,7 +1,6 @@
 .example {
   background-color: #eaeaea;
   padding: 27px 20px 25px 20px;
-  // margin-bottom: 28px;
   min-height: 652px;
 
   &__title {
@@ -106,8 +105,12 @@
   .example {
     .tablet-max-width();
     margin: 0 auto;
+    min-height: 1038px;
+    // box-sizing: border-box;
     background-color: transparent;
+    margin-top: 77px;
     padding-top: 43px;
+    padding-bottom: 0;
     border-top: 1px solid #e6e6e6;
 
     &__title {
@@ -115,15 +118,18 @@
       font-weight: normal;
       font-size: 60px;
       line-height: 60px;
+      margin-bottom: 64px;
     }
 
     &__description {
       width: 708px;
       font-size: 16px;
       line-height: 24px;
+      margin-bottom: 54px;
     }
 
     &__wrapper-stats {
+      width: 708px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -135,16 +141,16 @@
     }
 
     &__stats-list {
-      margin-left: 20px;
+      width: 366px;
+      display: flex;
+      justify-content: space-between;
     }
 
     &__stats-item dt {
       font-size: 30px;
       line-height: 37px;
       width: 162px;
-      min-height: 72px;
-      padding: 15px 0 25px 0;
-      margin-left: 42px;
+      padding: 15px 0 20px 0;
     }
 
     &__stats-item dd {
@@ -156,12 +162,12 @@
 
     &__stats-item--first dd {
       width: 114px;
-      left: 65px;
+      left: 24px;
     }
 
     &__stats-item--second dd {
       width: 142px;
-      left: 52px;
+      left: 10px;
     }
 
     &__cash {
@@ -169,6 +175,7 @@
       line-height: 30px;
       width: 174px;
       text-align: right;
+      margin-top: -15px;
     }
 
     &__image-wrapper {
@@ -176,7 +183,7 @@
       margin: 0 auto;
       justify-content: center;
       position: relative;
-      margin-top: 59px;
+      margin-top: 48px;
     }
 
     &__image-wrapper::before {
@@ -192,19 +199,22 @@
 
     &__image--before {
       width: 354px;
-      height: 620px;
-      margin-left: 30px;
+      height: 530px;
+      margin-left: 0px;
       margin-right: 19px;
     }
 
     &__image--after {
       display: block;
+      height: 530px;
       width: 354px;
-      height: 607px;
+      margin-top: 7.5px;
     }
 
     &__slider {
-      margin: 0;
+      max-width: 572px;
+      margin: 0 auto;
+      margin-top: 15px;
     }
   }
 }
