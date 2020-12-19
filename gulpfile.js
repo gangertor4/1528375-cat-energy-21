@@ -7,6 +7,7 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const rename = require("gulp-rename");
 const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
 
 // Styles
 
@@ -34,6 +35,17 @@ const createWebp = () => {
 }
 
 exports.createWebp = createWebp;
+
+//Sprites
+
+const sprite = () => {
+  return gulp.src("source/img/**/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprites.svg"))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.sprite = sprite;
 
 // Server
 

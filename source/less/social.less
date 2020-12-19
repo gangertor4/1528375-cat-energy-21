@@ -17,31 +17,47 @@
     color: black;
   }
 
-  &__item--vk {
+  &__item--vk svg {
     width: 23px;
     height: 16px;
-    background-image: url("../img/icon_vkontakte.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    fill: #666666;
   }
 
-  &__item--insta {
+  &__item--insta svg {
     margin-left: 36px;
     margin-right: 33px;
     width: 16px;
     height: 16px;
-    background-image: url("../img/icon_instagram.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    fill: #666666;
   }
 
-  &__item--fb {
+  &__item--fb svg {
     width: 22px;
     height: 22px;
-    background-image: url("../img/icon_facebook.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    fill: transparent;
+    stroke: #666666;
   }
+
+  &__item--vk svg:hover,
+  &__item--vk svg:focus {
+    fill: #68b738;
+  }
+
+  &__item--insta svg:hover,
+  &__item--insta svg:focus {
+    fill: #68b738;
+  }
+
+  &__item--fb svg:hover,
+  &__item--fb svg:focus {
+    stroke: #68b738;
+  }
+
+  &__item--vk svg:active,
+  &__item--insta:active,
+  &__item--fb:active {
+    opacity: 0.3;
+  }  
 }
 
 @media (min-width: @tablet-width) {
@@ -56,18 +72,18 @@
       min-height: 33px;
     }
 
-    &__item--vk {
+    &__item--vk svg {
       width: 30px;
       height: 22px;
     }
 
-    &__item--insta {
+    &__item--insta svg {
       width: 23px;
       height: 23px;
       margin: 0;
     }
 
-    &__item--fb {
+    &__item--fb svg {
       width: 28px;
       height: 33px;
     }
