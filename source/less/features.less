@@ -107,6 +107,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 0;
 
     &__item {
       width: 708px;
@@ -115,6 +116,10 @@
       padding-left: 53px;
       padding-bottom: 57px;
       position: relative;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
     }
 
     &__item--weight-loss::before {
@@ -155,9 +160,16 @@
       padding: 0;
       font-size: 16px;
       line-height: 24px;
-      width: 377px;
       border: none;
-      margin-bottom: 48px;
+      margin-bottom: 52px;
+    }
+
+    &__description--weight-loss {
+      width: 377px;
+    }
+
+    &__description--weight-gain {
+      width: 342px;
     }
 
     &__link {
@@ -174,8 +186,8 @@
       width: 32px;
       height: 10px;
       background-size: contain;
-      top: 11px;
-      left: 133px;
+      top: 10px;
+      left: 135px;
     }
   }
 }
