@@ -48,7 +48,7 @@
       font-weight: normal;
       padding: 0;
     }
-    
+
     &__item:hover,
     &__item:focus {
       opacity: 0.6;
@@ -72,11 +72,11 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    margin-top: 69px;
+    margin-top: 70px;
 
     &__list {
       margin-top: 0;
-      max-width: 480px;
+      min-width: 480px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -87,8 +87,14 @@
     }
 
     &__list--index > &__item--current a {
-      padding-bottom: 8px;
+      padding-bottom: 6px;
       border-bottom: 2px solid #ffffff;
+    }
+
+    &__item {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
     }
 
     &__item--index:hover,
