@@ -3,13 +3,15 @@
 
   &__logo-wrapper {
     .mobile-max-width();
+    box-sizing: border-box;
+    min-height: 66px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
     padding-top: 10px;
-    padding-bottom: 17px;
+    padding-bottom: 12px;
   }
 
   &__logo {
@@ -22,7 +24,8 @@
     background-image: url("../img/logo-name.svg");
     width: 101px;
     height: 18px;
-    margin-top: 11px;
+    margin-top: 14px;
+    margin-right: 14px;
   }
 
   &__nav-toggle {
@@ -34,7 +37,7 @@
     position: relative;
     cursor: pointer;
     margin-top: 11px;
-    margin-right: 20px;
+    //margin-right: 20px;
 
 
     &::before,
@@ -76,6 +79,15 @@
       margin-top: 24px;
     }
 
+    &__logo-wrapper:hover, 
+    &__logo-wrapper:focus {
+      opacity: 0.8;
+    }
+
+    &__logo-wrapper:active {
+      opacity: 0.6;
+    }
+
     &__logo-image {
       width: 174px;
       height: auto;
@@ -97,8 +109,11 @@
       display: none;
     }
 
+    &__logo-wrapper {
+      margin-top: 53px;
+    }
+
     &__logo-image {
-      margin-top: 23px;
       width: 202px;
       height: auto;
     }

@@ -1,0 +1,229 @@
+[33mcommit 4f745ea42e4eb4bb5a21963e8be3f3e8c4447a96[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mmodule7-task1[m[33m)[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sun Dec 13 15:48:54 2020 +0300
+
+    Правки разметки блока additional в каталоге
+
+[33mcommit d75d53693e734140ecb71bd998873b1851c9ca36[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31macademy/master[m[33m)[m
+Merge: 345e2b7 b1c05fe
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun Dec 13 15:31:22 2020 +0300
+
+    Merge pull request #12 from gangertor4/module6-task2
+
+[33mcommit b1c05fe0f3ac810b32bc959f46866fafedf07c75[m[33m ([m[1;31morigin/module6-task2[m[33m, [m[1;32mmodule6-task2[m[33m)[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sun Dec 13 15:20:34 2020 +0300
+
+    Исправлена кнопка в form-bottom
+
+[33mcommit 345e2b74c011fa91bf879cf0a8b1ebb0594f6d63[m
+Merge: 25c7697 bf63a16
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun Dec 13 14:54:51 2020 +0300
+
+    Merge pull request #13 from gangertor4/module6-task3
+
+[33mcommit bf63a160484b8f2a4b1697476b526a5783b9247a[m[33m ([m[1;31morigin/module6-task3[m[33m, [m[1;32mmodule6-task3[m[33m)[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sun Dec 13 14:35:30 2020 +0300
+
+    Исправление ошибок линтера
+
+[33mcommit fc998e2b26992a1dcf1dd0361a49cf938e0da186[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sun Dec 13 14:22:49 2020 +0300
+
+    Иллюстрации в блоке present каталога
+
+[33mcommit 76b71822ea8ea821fdbe1b9ccd2fabd95b4da8c6[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Dec 12 16:07:12 2020 +0300
+
+    Картинки и разметка карточек каталога в мобильном и планшетном режиме
+
+[33mcommit f96682e456ba235ec92fe1bc2eb79213850de50a[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Dec 12 13:27:11 2020 +0300
+
+    Исправление ошибок разметки формы
+
+[33mcommit cfafa05cf161200486b402a5df5f84e14fe5f984[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Dec 12 12:42:13 2020 +0300
+
+    Исправление ошибок линтера
+
+[33mcommit 5bc48419f4e8e21a76f7bd523d5d59a62e6c480d[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Dec 12 12:40:00 2020 +0300
+
+    Чекбоксы в форме
+
+[33mcommit 3c7c00201bdd76ee7983a1364c38ff0acd6e2f40[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Dec 12 12:33:48 2020 +0300
+
+    Радио-кнопки в форме
+
+[33mcommit 587ba67052fb343c3be689540b99b5e7cad7345d[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Dec 12 12:32:33 2020 +0300
+
+    Радио-кнопки в форме
+
+[33mcommit 6922c8ab716e4ce41e70d3ba264b7f1d5ea8f0bb[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Wed Dec 9 22:12:52 2020 +0300
+
+    иконки в форме
+
+[33mcommit 25c7697d11bcb0b0e0b790fe074ee13a33124542[m
+Merge: 43c9766 d1f5e21
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Tue Dec 8 23:09:54 2020 +0300
+
+    Merge pull request #11 from gangertor4/module6-task1
+
+[33mcommit d1f5e21f696db78b2bc2c28770f32d3cf5cd7dfa[m[33m ([m[1;31morigin/module6-task1[m[33m, [m[1;32mmodule6-task1[m[33m)[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Tue Dec 8 22:15:20 2020 +0300
+
+    Исправление ошибок линтера
+
+[33mcommit 2bb92ffec053617b734cf3884433a1e0068744c5[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Tue Dec 8 22:11:20 2020 +0300
+
+    Исправление сетки блока example + незначительные правки
+
+[33mcommit 75b64e03fc72334450c2bdc15c2a588b8b4f8351[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Mon Dec 7 23:20:32 2020 +0300
+
+    Правки в блоке promo, header
+
+[33mcommit b8fee6450bdbb771a5b0a1931d6f535f8585ddd3[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sun Dec 6 18:23:07 2020 +0300
+
+    Загружена графика для формы и каталога
+
+[33mcommit 600119fd3f6a2e84ec2ccdecc757de8be74dabbd[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sun Dec 6 15:51:22 2020 +0300
+
+    Ошибки линтера
+
+[33mcommit a7e6b862e7d354f19f9959e0475cd29220ddff2d[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sun Dec 6 15:42:49 2020 +0300
+
+    Иллюстрации в футере и contacts на флекс с грида
+
+[33mcommit d56df1f146ee34fc43cc706d6332de462cd54afe[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Dec 5 19:18:21 2020 +0300
+
+    Работа с иллюстрациями в блоках example и contacts/ Не закончена
+
+[33mcommit cacd13a4446f12613dae8354a1469580c5c051c2[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Dec 5 17:23:29 2020 +0300
+
+    Добавлена графика в блок example
+
+[33mcommit 74acb539bfbce4014a628a3bdf0352ab0ba904d0[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Dec 5 16:17:02 2020 +0300
+
+    Добавлена графика в блок applying
+
+[33mcommit c51dadc845468b5881b51c7aa0ca38628bfdc415[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Dec 5 15:39:45 2020 +0300
+
+    Добавлена графика в блоки promo и features
+
+[33mcommit 9c042240812ce23b3b2a54a669b292d21708798d[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Dec 5 13:42:38 2020 +0300
+
+    Добавлен логотип
+
+[33mcommit 43c97662c98fc1f170086b366da271778769d54e[m
+Merge: b8d81bb ed5a8d9
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Tue Dec 1 22:14:52 2020 +0300
+
+    Merge pull request #10 from gangertor4/module4-task3
+
+[33mcommit ed5a8d94136c81fe83e532fdbfcc120bbf57ea2f[m[33m ([m[1;31morigin/module4-task3[m[33m, [m[1;32mmodule4-task3[m[33m)[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Tue Dec 1 22:12:59 2020 +0300
+
+    маргин: авто в каталог.лесс
+
+[33mcommit a6f40314c22f0a1c717a2aedac67ad19b2510cb3[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Tue Dec 1 22:04:07 2020 +0300
+
+    additional-goods грид во флекс
+
+[33mcommit db1e83af38e2c7b849a258ae6f9a51175d680d6e[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Tue Dec 1 21:56:22 2020 +0300
+
+    Исправления в разметке футера
+
+[33mcommit b6f7b903cfc1ab8bcc53834f7878a080ca0df532[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Mon Nov 30 23:37:50 2020 +0300
+
+    Исправление ошибок линтера
+
+[33mcommit 7846e6ed9300a9d6c5489e41742740c4e77a81b6[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Mon Nov 30 23:35:39 2020 +0300
+
+    Адаптивная сетка страницы каталога
+
+[33mcommit b8d81bb231477c3d22e679c0a6e7873bdc06434a[m
+Merge: 29a978c ca1dd0c
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun Nov 29 22:24:46 2020 +0300
+
+    Merge pull request #9 from gangertor4/module4-task2
+
+[33mcommit ca1dd0c862419a437b8e4f68b81af6c9ba6b643f[m[33m ([m[1;31morigin/module4-task2[m[33m, [m[1;32mmodule4-task2[m[33m)[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sun Nov 29 21:36:27 2020 +0300
+
+    Исправление ошибок линтера
+
+[33mcommit 697f268f8eed5fa6f92ccf9a541d7704490bf458[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sun Nov 29 21:32:18 2020 +0300
+
+    Адаптивная сетка формы для остальных файлов
+
+[33mcommit 1d3ab9d2352ded67b89da0942e9f4ed6b4e08df2[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sun Nov 29 14:14:05 2020 +0300
+
+    Адаптивная сетка формы для файлов form-title, form-input
+
+[33mcommit 29a978cd075293499c0c6cdbc01941f20ce4ac36[m
+Merge: 6999757 b2dbd4e
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sat Nov 28 23:09:43 2020 +0300
+
+    Merge pull request #8 from gangertor4/module4-task1
+
+[33mcommit b2dbd4e5bf0c3f39791ad8e7dae6efb620431053[m[33m ([m[1;31morigin/module4-task1[m[33m, [m[1;32mmodule4-task1[m[33m)[m
+Author: gangertor4 <tor4911@yandex.ru>
+Date:   Sat Nov 28 23:08:06 2020 +0300
+
+    Исправление ошибок линтера
+
+

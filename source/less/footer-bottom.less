@@ -1,8 +1,10 @@
 .footer-bottom {
   max-width: 320px;
+  min-height: 236px;
+  box-sizing: border-box;
   margin: 0 auto;
   background-color: #f2f2f2;
-  padding-top: 34px;
+  padding-top: 38px;
   padding-bottom: 32px;
 
   &__logo {
@@ -12,6 +14,15 @@
     height: 24px;
     margin: 0 auto;
     margin-bottom: 32px;
+  }
+
+  &__logo:hover,
+  &__logo:focus {
+    opacity: 0.8;
+  }
+
+  &__logo:active {
+    opacity: 0.3;
   }
 }
 
@@ -29,6 +40,10 @@
     &__logo {
       margin: 0;
     }
+
+    &__social {
+      margin-left: 22px;
+    }
   }
 }
 
@@ -39,5 +54,13 @@
     padding: 0 110px 0 110px;
     display: flex;
     justify-content: space-between;
+
+    &__social {
+      margin-top: 10px;
+    }
+
+    &__made-by {
+      margin-top: 10px;
+    }
   }
 }

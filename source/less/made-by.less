@@ -1,7 +1,7 @@
 .made-by {
   .mobile-max-width();
   margin: 0 auto;
-  margin-top: 28px;
+  margin-top: 22px;
 
   &__name {
     font-family: "Arial", sans-serif;
@@ -9,6 +9,7 @@
     line-height: 18px;
     color: #444444;
     position: relative;
+    text-decoration: none;
   }
 
   &__name::after {
@@ -21,6 +22,15 @@
     background-repeat: no-repeat;
     right: -168px;
     top: -5px;
+  }
+
+  &__name:hover::after {
+    
+  }
+
+  &__name:active,
+  &__name:active::after {
+    opacity: 0.3;
   }
 }
 
@@ -39,3 +49,11 @@
     }
   }
 }
+
+// @media (min-width: @desktop-width) {
+//   .made-by {
+//     &__name span {
+//       margin-top: 25px;
+//     }
+//   }
+// }

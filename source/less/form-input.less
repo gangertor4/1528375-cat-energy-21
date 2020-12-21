@@ -23,10 +23,29 @@
     min-height: 45px;
     box-sizing: border-box;
     border: 1px solid #e7e7e7;
+    outline: none;
   }
 
-  &__input--email,
-  &__input--phone {
+  &__input::-webkit-outer-spin-button,
+  &__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+  &__input:hover {
+    border-color: #cdcdcd;
+  }
+
+  &__input:focus {
+    border: 2px solid #444444;
+  }
+
+  &__input:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &__email,
+  &__phone {
     position: relative;
   }
 
@@ -34,10 +53,14 @@
     width: 20px;
     height: 14.05px;
     position: absolute;
-    background-image: url("../img/form/icon_email.svg");
+    background-image: url("../img/form/icon__email.svg");
     background-repeat: no-repeat;
     top: 16px;
     right: 16px;
+  }
+
+  &__input--email:focus + &__icon-email {
+    background-image: url("../img/form/icon_email_active.svg");
   }
 
   &__icon-phone {
@@ -48,6 +71,10 @@
     background-repeat: no-repeat;
     top: 13px;
     right: 13px;
+  }
+
+  &__input--phone:focus + &__icon-phone {
+    background-image: url("../img/form/icon_phone_active.svg");
   }
 }
 
@@ -87,7 +114,7 @@
       right: 17px;
     }
 
-    &__input--email {
+    &__email {
       margin-top: 86px;
     }
   }

@@ -2,6 +2,7 @@
   .mobile-max-width();
   margin: 0 auto;
   margin-top: 22px;
+  margin-bottom: 6px;
   display: flex;
   flex-direction: column;
 
@@ -12,7 +13,7 @@
     padding-top: 30px;
     padding-bottom: 22px;
     width: 280px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     position: relative;
   }
 
@@ -82,11 +83,21 @@
     height: 10px;
     background-size: contain;
     top: 7px;
-    left: 100px;
+    left: 104px;
   }
 
-  &__link:hover::after {
+  &__link:hover::after,
+  &__link:focus::after {
     background-image: url("../img/icon_arrow-hover.svg");
+  }
+
+  &__link:active {
+    opacity: 0.3;
+  }
+  
+  &__link:active::after {
+    background-image: url("../img/icon_arrow-hover.svg");
+    opacity: 0.3;
   }
 }
 
@@ -96,6 +107,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 0;
 
     &__item {
       width: 708px;
@@ -104,6 +116,10 @@
       padding-left: 53px;
       padding-bottom: 57px;
       position: relative;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
     }
 
     &__item--weight-loss::before {
@@ -144,9 +160,16 @@
       padding: 0;
       font-size: 16px;
       line-height: 24px;
-      width: 377px;
       border: none;
-      margin-bottom: 48px;
+      margin-bottom: 52px;
+    }
+
+    &__description--weight-loss {
+      width: 377px;
+    }
+
+    &__description--weight-gain {
+      width: 342px;
     }
 
     &__link {
@@ -163,8 +186,8 @@
       width: 32px;
       height: 10px;
       background-size: contain;
-      top: 11px;
-      left: 133px;
+      top: 10px;
+      left: 135px;
     }
   }
 }
@@ -175,15 +198,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 82px;
+    margin-top: 90px;
     margin-bottom: 71px;
 
     &__item {
       width: 570px;
+      min-height: 374px;
       padding-bottom: 55px;
       padding-left: 52px;
       position: relative;
       margin: 0;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 0;
     }
 
     &__item--weight-loss::before {
@@ -217,7 +245,8 @@
 
     &__description {
       width: 467px;
-      margin-bottom: 23px;
+      margin-bottom: 25px;
     }
+    
   }
 }

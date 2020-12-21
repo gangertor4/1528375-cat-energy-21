@@ -37,7 +37,7 @@
             Каталог продукции
           </a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--current">
           <a>
             Подбор программы
           </a>
@@ -58,23 +58,23 @@
       </fieldset>
       <fieldset class="program">
         <label tabindex="0">
-          <input class="program__radio visually-hidden" type="radio" name="program" id="weight-loss" value="weight-loss" checked>Похудение
-        </label>
+          <input class="program__radio visually-hidden" type="radio" name="program" id="weight-loss" value="weight-loss" checked><span>Похудение
+        </span></label>
         <label tabindex="0">
-          <input class="program__radio visually-hidden" type="radio" name="program" id="weight-gain" value="weight-gain">Набор массы
-        </label>
+          <input class="program__radio visually-hidden" type="radio" name="program" id="weight-gain" value="weight-gain"><span>Набор массы
+        </span></label>
         <label tabindex="0">
-          <input class="program__radio visually-hidden" type="radio" name="program" id="idk" value="idk">Не знаю (нужен ваш совет)
-        </label>
+          <input class="program__radio visually-hidden" type="radio" name="program" id="idk" value="idk"><span>Не знаю (нужен ваш совет)
+        </span></label>
       </fieldset>
       <fieldset class="form-input form-input--contacts">
         <legend class="form-part-name">Контактные данные (владельца кота)</legend>
-        <label for="email" class="form-input__input--email">E-mail:*
-          <input class="form-input__input" type="email" id="email" placeholder="kuklachev@gmail.com">
+        <label for="email" class="form-input__email">E-mail:*
+          <input class="form-input__input form-input__input--email" type="email" id="email" placeholder="kuklachev@gmail.com">
           <div class="form-input__icon-email"></div>
         </label>
-        <label for="phone" class="form-input__input--phone">Телефон:*
-          <input class="form-input__input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+        <label for="phone" class="form-input__phone">Телефон:*
+          <input class="form-input__input form-input__input--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90">
           <div class="form-input__icon-phone"></div>
         </label>
       </fieldset>
@@ -84,10 +84,10 @@
       </fieldset>
       <fieldset class="additional">
         <legend class="form-part-name additional__title">Дополнительно</legend>
-        <label><input class="additional__checkbox visually-hidden" type="checkbox" id="alt-sugar" value="alt-sugar" name="additional" checked>Сахарозаменитель</label>
-        <label><input class="additional__checkbox visually-hidden" type="checkbox" id="water" value="water" name="additional">Питьевая вода</label>
-        <label><input class="additional__checkbox visually-hidden" type="checkbox" id="milk" value="milk" name="additional">Молоко</label>
-        <label><input class="additional__checkbox visually-hidden" type="checkbox" id="vitamins" value="vitamins" name="additional">Витамины</label>
+        <label><input class="additional__checkbox visually-hidden" type="checkbox" id="alt-sugar" value="alt-sugar" name="additional" checked><span>Сахарозаменитель</span></label>
+        <label><input class="additional__checkbox visually-hidden" type="checkbox" id="water" value="water" name="additional"><span>Питьевая вода</span></label>
+        <label><input class="additional__checkbox visually-hidden" type="checkbox" id="milk" value="milk" name="additional"><span>Молоко</span></label>
+        <label><input class="additional__checkbox visually-hidden" type="checkbox" id="vitamins" value="vitamins" name="additional" disabled><span>Витамины</span></label>
       </fieldset>
       <div class="form-bottom">
         <button class="submit-form button form-bottom__button" type="submit">Отправить заявку</button>
@@ -109,28 +109,38 @@
       </picture>
     </div>
     <div class="footer-bottom">
-      <div class="footer-bottom__logo"></div>
+      <a href="index.html">
+        <div class="footer-bottom__logo"></div>
+      </a>
       <div class="footer-bottom__social social">
         <ul class="social__list">
           <li class="social__item social__item--vk">
             <a href="http://www.vk.com">
-              <span class="visually-hidden">Вконтакте</span>
+              <svg>
+                <use xlink:href="../img/sprites.svg#icon_vkontakte"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item social__item--insta">
             <a href="http://www.instagram.com">
-              <span class="visually-hidden">Instagram</span>
+              <svg>
+                <use xlink:href="../img/sprites.svg#icon_instagram"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item social__item--fb">
             <a href="http://www.facbook.com">
-              <span class="visually-hidden">Facebook</span>
+              <svg>
+                <use xlink:href="../img/sprites.svg#icon_facebook"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
       <div class="footer-bottom__made-by made-by">
-        <span class="made-by__name">HTML Academy</span>
+        <a class="made-by__name" href="https://htmlacademy.ru/intensive/adaptive">
+          <span>HTML Academy</span>
+        </a>
       </div>
     </div>
     </footer>

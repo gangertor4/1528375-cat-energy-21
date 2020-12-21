@@ -2,6 +2,12 @@
   font-family: "Oswald", sans-serif;
   background-image: url("../img/promo_mobile_bg.png");
   background-repeat: no-repeat;
+  @media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    background-image: url("../img/promo_mobile_bg@2x.png");
+    background-size: 320px auto;
+    }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,14 +31,21 @@
     line-height: 14px;
     text-transform: uppercase;
     color: #ffffff;
+    margin: 0;
     margin-bottom: 29px;
+    margin-right: 3px;
   }
 
   &__link {
     width: 280px;
     height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: -2px;
   }
 }
+
+
 
 @media (min-width: @tablet-width) {
   .promo {
@@ -51,6 +64,8 @@
       width: 414px;
       text-align: left;
       margin-left: 88px;
+      margin-top: 5px;
+      margin-bottom: 41px;
     }
 
     &__slogan {
@@ -58,9 +73,11 @@
       line-height: 20px;
       color: #000000;
       margin-left: 88px;
+      margin-bottom: 20px;
     }
 
     &__image {
+      display: block;
       width: 709px;
       height: 609px;
     }
@@ -72,8 +89,8 @@
       line-height: 20px;
       margin-bottom: 526px;
       position: absolute;
-      top: 260px;
-      left: 88px;
+      top: 264px;
+      left: 82px;
     }
   }
 }
@@ -81,11 +98,14 @@
 @media (min-width: @desktop-width) {
   .promo {
     .desktop-max-width();
+    margin: 0 auto;
+    height: 470px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 111px;
-    margin-left: 45px;
+    margin-top: 80px;
+    // margin-left: 100px;
+    padding: 0;
     position: relative;
 
     &::after {
@@ -94,10 +114,16 @@
       width: 720px;
       height: 694px;
       background-image: url("../img/promo_desktop_bg.png");
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/promo_desktop_bg@2x.png");
+        background-size: 720px auto;
+    }
       background-color: #68b738;
       background-repeat: no-repeat;
-      top: -120px;
-      right: -175px;
+      top: -216px;
+      right: -120px;
       z-index: -1;
     }
 
@@ -120,15 +146,14 @@
       width: 552px;
       height: 499px;
       position: absolute;
-      top: 30px;
-      right: 155px;
+      top: -75px;
+      right: 210px;
     }
 
     &__link {
       position: static;
-      margin-top: 52px;
-      margin-bottom: 267px;
-      margin-left: 80px;
+      margin-top: 33px;
+      margin-left: 90px;
     }
   }
 }
