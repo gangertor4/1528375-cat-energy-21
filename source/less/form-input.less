@@ -18,19 +18,13 @@
     color: #444444;
     flex-grow: 1;
     padding-left: 15px;
-    margin-left: 13px;
-    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-bottom: 14px;
     min-height: 45px;
     box-sizing: border-box;
     border: 1px solid #e7e7e7;
     outline: none;
   }
-
-  &__input::-webkit-outer-spin-button,
-  &__input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
 
   &__input:hover {
     border-color: #cdcdcd;
@@ -44,9 +38,24 @@
     border: 2px solid #ff8282;
   }
 
+  &--cat-info {
+    padding-bottom: 9px;
+  }
+
   &__email,
   &__phone {
     position: relative;
+  }
+
+  &__input--email {
+    margin-top: 3px;
+    margin-left: 12px;
+    padding-left: 12px;
+  }
+
+  &__input--phone {
+    padding-left: 12.5px;
+    margin-left: 11px;
   }
 
   &__icon-email {
