@@ -9,18 +9,28 @@
   position: relative;
 
   & span {
+    display: block;
+    width: fit-content;
     background-color: #ffffff;
+    padding-right: 22px;
+    // padding-left: 20px;
+    // margin-left: -20px;
+  }
+
+  &--contacts span {
+    width: 187px;
     padding-right: 15px;
   }
 
   &::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 2px;
     background-color: #68b738;
     top: 15px;
     left: 0;
+    right: -20px;
     z-index: -1;
   }
 
