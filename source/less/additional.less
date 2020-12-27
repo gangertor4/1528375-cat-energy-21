@@ -27,6 +27,7 @@
     display: block;
     width: 30px;
     height: 30px;
+    box-sizing: border-box;
     // background-image: url("../img/form/checkbox.svg");
     border: 1px solid #cdcdcd;
     top: -22px;
@@ -59,6 +60,7 @@
   .additional {
     max-width: 565px;
     padding: 0;
+    margin-bottom: 17px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -71,11 +73,24 @@
       font-size: 20px;
       line-height: 30px;
       width: 221px;
+      margin-left: 60px;
       margin-bottom: 42px;
     }
 
     label:nth-child(odd) {
       margin-left: 123px;
+    }
+
+    &__checkbox::before {
+      width: 40px;
+      height: 40px;
+      top: -28px;
+      left: -58px;
+    }
+
+    &__checkbox:checked::after {
+      top: -21px;
+      left: -51px;
     }
   }
 }

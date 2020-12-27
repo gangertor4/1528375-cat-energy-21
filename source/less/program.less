@@ -28,6 +28,7 @@
     display: block;
     width: 30px;
     height: 30px;
+    box-sizing: border-box;
     // background-image: url("../img/form/radio.svg");
     border: 1px solid #cdcdcd;
     border-radius: 50%;
@@ -43,7 +44,7 @@
     height: 30px;
     background-image: url("../img/form/radio_checked.svg");
     background-repeat: no-repeat;
-    background-position: 8px 8px;
+    background-position: center;
     background-size: 13.5px 13.5px;
     top: -22px;
     left: -46px;
@@ -63,14 +64,15 @@
 @media (min-width: @tablet-width) {
   .program {
     width: 630px;
+    min-height: 196px;
+    box-sizing: border-box;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
-    margin-top: 62px;
-    margin-bottom: 71px;
+    margin-top: 50px;
+    margin-bottom: 75px;
     padding-top: 30px;
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
+    border: 1px solid #d9d9d9;
 
     label {
       width: calc(630px - 88px);
@@ -81,8 +83,22 @@
       margin-left: 88px;
     }
 
-    &__radio {
-      top: -3px;
+    &__radio::before {
+      width: 39.95px;
+      height: 40px;
+      top: -30px;
+      left: -58px;
+    }
+
+    &__radio:checked::before {
+      width: 39.95px;
+      height: 40px;
+      background-image: url("../img/form/radio_checked.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 17.98px 18px;
+      top: -30px;
+      left: -58px;
     }
   }
 }
