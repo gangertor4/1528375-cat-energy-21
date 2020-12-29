@@ -66,6 +66,7 @@
       width: 129px;
       display: flex;
       justify-content: space-between;
+      align-items: start;
       border: none;
       margin: 0;
       padding: 0;
@@ -75,7 +76,6 @@
     &__item--vk svg {
       width: 30px;
       height: 22px;
-      margin-top: -6px;
     }
 
     &__item--insta svg {
@@ -88,6 +88,15 @@
     &__item--fb svg {
       width: 28px;
       height: 33px;
+      margin-top: -6px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    &__item--vk svg {
+      margin-top: -6px;
     }
   }
 }
