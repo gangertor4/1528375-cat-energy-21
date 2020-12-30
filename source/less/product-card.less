@@ -4,10 +4,14 @@
   min-height: 179px;
   // border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
-  display: grid;
-  grid-template-columns: repeat(2, 140px);
-  grid-template-areas: "img title" "img list" "btn btn";
+  // display: grid;
+  // grid-template-columns: repeat(2, 140px);
+  // grid-template-areas: "img title" "img list" "btn btn";
   padding-bottom: 23px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 
   &__image-container picture {
     display: block;
@@ -18,12 +22,15 @@
     grid-area: img;
     width: 84px;
     height: 100px;
-    margin-bottom: 12px;
-    justify-self: center;
-    align-self: end;
+    margin-left: 25px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &__info-container {
+    margin-left: 29px;
   }
 
   &__title {
@@ -65,6 +72,7 @@
 
   &__buy-button {
     grid-area: btn;
+    width: 280px;
     min-height: 40px;
     display: flex;
     justify-content: center;
