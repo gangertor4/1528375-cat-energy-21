@@ -9,20 +9,31 @@
     line-height: 16px;
     color: #222222;
     text-transform: uppercase;
+    margin-top: 13px;
+    margin-bottom: 9px;
   }
 
   &__feature-list tr {
+    width: 280px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    padding: 0;
   }
 
+  &__feature:first-child {
+    margin-left: -5px;
+  }
 
   &__feature {
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 14px;
     color: #444444;
+  }
+
+  &__feature span {
+    text-transform: uppercase;
   }
 
   &__buy-button {
@@ -33,6 +44,7 @@
 
 .additional-card:last-child {
   border-bottom: 1px solid #cdcdcd;
+  margin-bottom: 39px;
 }
 
 @media (min-width: @tablet-width) {
