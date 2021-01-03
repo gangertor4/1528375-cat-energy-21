@@ -9,6 +9,23 @@
     color: #000000;
     margin-top: 25px;
     margin-bottom: 36px;
+    position: relative;
+    display: block;
+    width: fit-content;
+    background-color: #ffffff;
+    padding-right: 22px;
+  }
+
+  &__title::after {
+    content: "";
+    position: absolute;
+    width: auto;
+    height: 2px;
+    background-color: #68b738;
+    top: 15px;
+    left: 0;
+    right: -52px;
+    z-index: -1;
   }
 }
 
