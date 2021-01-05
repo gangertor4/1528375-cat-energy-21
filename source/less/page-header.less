@@ -22,7 +22,27 @@
     margin-right: 14px;
   }
 
-  &__nav-toggle {
+  &__nav-toggle--burger {
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    width: 21px;
+    height: 23px;
+  }
+
+  &__nav-toggle--burger::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    top: 13px;
+    right: 1px;
+  }
+
+  &__nav-toggle--cross {
     outline: none;
     border: none;
     background-color: #ffffff;
