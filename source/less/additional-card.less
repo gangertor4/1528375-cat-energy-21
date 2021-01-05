@@ -97,14 +97,19 @@
 @media (min-width: @desktop-width) {
   .additional-card {
     width: 896px;
-    height: 72px;
+    min-height: 72px;
     padding: 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    border-left: none;
+    border-right: none;
 
     &__title {
       margin: 0;
+      margin-top: 25px;
+      margin-right: auto;
     }
 
     &__feature-list tr {
@@ -117,6 +122,11 @@
       width: 244px;
       min-height: 40px;
       margin: 0;
+      margin-left: 38px;
     }
+  }
+
+  .additional-card:last-child {
+    margin-bottom: 0;
   }
 }
