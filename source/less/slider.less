@@ -8,6 +8,7 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   &__bar {
@@ -19,7 +20,7 @@
     position: relative;
   }
 
-  &__bar::before {
+  &__bar--before::before {
     content: "";
     position: absolute;
     width: 35px;
@@ -28,6 +29,17 @@
     border-radius: 6px;
     top: 4px;
     left: 6px;
+  }
+
+  &__bar--after::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    background-color: #68b738;
+    border-radius: 6px;
+    top: 4px;
+    right: 6px;
   }
 }
 
