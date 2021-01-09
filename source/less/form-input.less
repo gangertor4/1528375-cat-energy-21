@@ -51,14 +51,13 @@
     margin-top: 3px;
     margin-left: 12px;
     padding-left: 12px;
+    padding-right: 22px;
   }
 
-  &__input--phone {
-    padding-left: 12.5px;
-    margin-left: 11px;
-  }
-
-  &__icon-email {
+  &__email::after {
+    content: "";
+    position: absolute;
+    display: block;
     width: 20px;
     height: 14.05px;
     position: absolute;
@@ -68,11 +67,14 @@
     right: 16px;
   }
 
-  &__input--email:focus + &__icon-email {
-    background-image: url("../img/form/icon_email_active.svg");
+  &__input--phone {
+    padding-left: 12.5px;
+    margin-left: 11px;
   }
 
-  &__icon-phone {
+  &__phone::after {
+    content: "";
+    position: absolute;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -82,7 +84,11 @@
     right: 13px;
   }
 
-  &__input--phone:focus + &__icon-phone {
+  &__input--email:focus + &__email::after {
+    background-image: url("../img/form/icon_email_active.svg");
+  }
+
+  &__input--phone:focus + &__phone::after {
     background-image: url("../img/form/icon_phone_active.svg");
   }
 }
@@ -112,11 +118,6 @@
 
     &--contacts {
       margin-bottom: 47px;
-    }
-
-    &__icon-phone {
-      top: 13px;
-      right: 17px;
     }
 
     &__email {
