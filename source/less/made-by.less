@@ -24,6 +24,19 @@
     top: -5px;
   }
 
+  &__name:hover::after,
+  &__name:focus::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/logo_html_hover.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -168px;
+    top: -5px;
+  }
+
   &__name:active,
   &__name:active::after {
     opacity: 0.3;
@@ -41,6 +54,12 @@
     }
 
     &__name::after {
+      right: -49px;
+      top: -8px;
+    }
+
+    &__name:hover::after,
+    &__name:focus::after {
       right: -49px;
       top: -8px;
     }
