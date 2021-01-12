@@ -54,7 +54,7 @@
     padding-right: 22px;
   }
 
-  &__email::after {
+  &__icon-email::after {
     content: "";
     position: absolute;
     display: block;
@@ -72,7 +72,7 @@
     margin-left: 11px;
   }
 
-  &__phone::after {
+  &__icon-phone::after {
     content: "";
     position: absolute;
     width: 20px;
@@ -84,11 +84,11 @@
     right: 13px;
   }
 
-  &__input--email:focus + &__email::after {
+  &__input--email:focus + &__icon-email::after {
     background-image: url("../img/form/icon_email_active.svg");
   }
 
-  &__input--phone:focus + &__phone::after {
+  &__input--phone:focus + &__icon-phone::after {
     background-image: url("../img/form/icon_phone_active.svg");
   }
 }

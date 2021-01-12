@@ -12,7 +12,7 @@
   }
 
   &__description {
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Helvetica", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
@@ -99,7 +99,7 @@
   }
 
   &__slider {
-    max-width: 196px;
+    width: 196px;
     margin: 0 auto;
     margin-top: 19px;
   }
@@ -211,8 +211,6 @@
       object-position: -5%;
       width: 354px;
       height: 520px;
-      margin-left: 0;
-      // margin-right: 19px;
     }
 
     &__image--after {
@@ -222,20 +220,18 @@
       width: 354px;
       height: 520px;
       margin: 0;
-      // margin-top: 7.5px;
     }
 
     &__slider {
-      max-width: 570px;
+      width: 570px;
       margin: 0 auto;
-      // margin-top: 20px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
-    max-width: 1440px;
+    width: 1440px;
     min-height: 630px;
     box-sizing: border-box;
     margin: 0 auto;
