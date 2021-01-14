@@ -20,12 +20,12 @@
     cursor: pointer;
   }
 
-  &__checkbox {
+  &__checkbox-text {
     position: relative;
     appearance: none;
   }
 
-  &__checkbox::before {
+  &__checkbox + &__checkbox-text::before {
     content: "";
     position: absolute;
     display: block;
@@ -33,28 +33,28 @@
     height: 30px;
     box-sizing: border-box;
     border: 1px solid #cdcdcd;
-    top: -22px;
+    top: -3px;
     left: -46px;
   }
 
-  &__checkbox:checked::after {
+  &__checkbox:checked + &__checkbox-text::after {
     content: "";
     position: absolute;
     display: block;
     width: 26px;
     height: 26px;
     background-image: url("../img/form/tick.svg");
-    top: -19px;
+    top: 0;
     left: -43px;
   }
 
-  &__checkbox:hover::before,
-  &__checkbox:focus::before {
+  &__checkbox + &__checkbox-text:hover::before,
+  &__checkbox + &__checkbox-text:focus::before {
     border-color: #bababa;
   }
 
-  &__checkbox:disabled + span,
-  &__checkbox:disabled::before {
+  &__checkbox:disabled + &__checkbox-text,
+  &__checkbox:disabled + &__checkbox-text:disabled::before {
     opacity: 0.3;
   }
 }
@@ -87,15 +87,15 @@
       margin-left: 123px;
     }
 
-    &__checkbox::before {
+    &__checkbox + &__checkbox-text::before {
       width: 40px;
       height: 40px;
-      top: -28px;
+      top: -4px;
       left: -58px;
     }
 
-    &__checkbox:checked::after {
-      top: -21px;
+    &__checkbox:checked + &__checkbox-text::after {
+      top: 1px;
       left: -51px;
     }
   }

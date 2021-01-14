@@ -127,7 +127,7 @@
       margin-left: 18px;
     }
 
-    &__icon-email {
+    &__icon-email::after {
       top: 23px;
       right: 17px;
     }
@@ -136,7 +136,7 @@
       padding-left: 20px;
     }
 
-    &__icon-phone {
+    &__icon-phone::after {
       top: 18px;
       right: 16px;
     }
@@ -145,7 +145,7 @@
 
 @media (min-width: @desktop-width) {
   .form-input {
-    .desktop-max-width();
+    // .desktop-max-width();
 
     label {
       margin-left: 0;
@@ -191,12 +191,12 @@
       }
     }
 
-    &__icon-email {
+    &__icon-email::after {
       top: 18px;
       right: 18px;
     }
 
-    &__icon-phone {
+    &__icon-phone::after {
       top: 16px;
       right: 17px;
     }
