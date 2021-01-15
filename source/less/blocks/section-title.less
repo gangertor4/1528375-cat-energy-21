@@ -1,0 +1,38 @@
+.section-title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+
+  &--catalog-title {
+    .mobile-max-width();
+    margin: 0 auto;
+    margin-top: 27px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 37px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .section-title {
+    &--catalog-title {
+      .tablet-max-width();
+      margin: 0 auto;
+      margin-top: 33px;
+      margin-bottom: 83px;
+      font-size: 60px;
+      line-height: 60px;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .section-title {
+    &--catalog-title {
+      .desktop-max-width();
+      margin: 0 auto;
+      margin-top: 51px;
+      margin-bottom: 48px;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.more {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ebebeb;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/catalog/plus.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -50px;
+    left: 125px;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+    margin-top: 78px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  &__description {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #444444;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    min-height: 40px;
+    font-size: 16px;
+    line-height: 0;
+    text-transform: uppercase;
+    color: #444444;
+    background-color: #f2f2f2;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .more {
+    box-sizing: border-box;
+    width: 324px;
+    min-height: 429px;
+    margin: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 38px;
+    position: relative;
+    border: 2px solid #f2f2f2;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      top: 52px;
+      left: 132px;
+    }
+
+    &__title {
+      width: 134px;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    &__description {
+      width: 167px;
+      font-size: 16px;
+      line-height: 18px;
+      margin: 0;
+      margin-top: 13px;
+    }
+
+    &__button {
+      width: 249px;
+      min-height: 40px;
+      font-size: 16px;
+      margin-top: 87px;
+    }
+
+    &__button:hover,
+    &__button:focus {
+      background-color: #ebebeb;
+    }
+
+    &__button:active {
+      color: fade(#444444, 30%);
+      background-color: #ebebeb;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more {
+    width: 245px;
+    min-height: 430px;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    margin: 0;
+    margin-top: 81px;
+
+    &::before {
+      top: 51px;
+      left: 92px;
+    }
+
+    &__button {
+      width: 169px;
+      margin-top: 85px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.form-bottom {
+  margin-top: 3px;
+
+  &__button {
+    width: 280px;
+    min-height: 40px;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-bottom {
+    width: 630px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 72px;
+
+    &__button {
+      width: 282px;
+      height: 52px;
+      margin: 0;
+      font-size: 20px;
+    }
+
+    &__footnote {
+      margin: 0;
+      margin-left: 13px;
+      margin-top: -2px;
+      align-self: center;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-bottom {
+    width: 840px;
+    justify-content: flex-start;
+    margin: 0;
+
+    &__button {
+      width: 568px;
+      height: 52px;
+      margin-right: 81px;
+    }
+
+    &__footnote {
+      width: 180px;
+      margin: 0;
+    }
+  }
+}

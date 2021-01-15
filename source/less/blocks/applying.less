@@ -1,0 +1,222 @@
+.applying {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+
+  &__title {
+    .section-title();
+    margin: 0;
+    padding: 0;
+    margin-bottom: 38px;
+  }
+
+  &__list {
+    list-style: none;
+    width: 280px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__item {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444444;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding: 0;
+    width: 198px;
+    min-height: 60px;
+    position: relative;
+  }
+
+  &__item p {
+    margin: 0;
+  }
+
+  &__item br {
+    display: none;
+  }
+
+  &__item--result {
+    margin-bottom: 0;
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: -80px;
+  }
+
+  &__item--nutrients::before {
+    background-image: url("../img/icon-leaf-mobile.svg");
+  }
+
+  &__item--powder::before {
+    background-image: url("../img/icon-water-mobile.svg");
+  }
+
+  &__item--exchange::before {
+    background-image: url("../img/icon-eat-mobile.svg");
+  }
+
+  &__item--result::before {
+    background-image: url("../img/icon-clock-mobile.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .applying {
+    width: 708px;
+    margin: 0 auto;
+    margin-top: 28px;
+
+    &__title {
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 60px;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__list {
+      width: 630px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: repeat(2, 280px);
+      grid-template-columns: 230px 246px;
+      grid-row-gap: 37px;
+      margin-right: 109px;
+    }
+
+    &__item p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 24px;
+      position: relative;
+      margin-bottom: 5px;
+    }
+
+    &__item:last-child p {
+      margin-bottom: 23px;
+    }
+
+    &__item br {
+      display: inline;
+    }
+
+    &__item--nutrients p {
+      width: 201px;
+    }
+
+    &__item--powder p {
+      width: 227px;
+    }
+
+    &__item--exchange p {
+      width: 209px;
+    }
+
+    &__item--result p {
+      width: 245px;
+    }
+
+    &__item::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -111px;
+      left: 0;
+    }
+
+    &__item--nutrients::before {
+      background-image: url("../img/icon-leaf.svg");
+    }
+
+    &__item--powder::before {
+      background-image: url("../img/icon-water.svg");
+    }
+
+    &__item--exchange::before {
+      background-image: url("../img/icon-eat.svg");
+    }
+
+    &__item--result::before {
+      background-image: url("../img/icon-clock.svg");
+    }
+
+    &__item::after {
+      content: "";
+      position: absolute;
+      width: 134px;
+      height: 280px;
+      top: -19px;
+      right: -50px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      color: #f2f2f2;
+    }
+
+    &__item--nutrients::after {
+      content: "1";
+      z-index: -1;
+    }
+
+    &__item--powder::after {
+      content: "2";
+      z-index: -1;
+    }
+
+    &__item--exchange::after {
+      content: "3";
+      z-index: -1;
+    }
+
+    &__item--result::after {
+      content: "4";
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .applying {
+    width: 1220px;
+    margin: 0 auto;
+
+    &__title {
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 169px;
+    }
+
+    &__list {
+      width: 1220px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+    }
+
+    &__item {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 15px;
+    }
+
+    &__item:last-child {
+      margin-right: 50px;
+    }
+  }
+}

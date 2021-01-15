@@ -1,0 +1,118 @@
+.program {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  padding: 0;
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  label {
+    .form-font();
+    color: #222222;
+    margin-bottom: 24.5px;
+    margin-left: 66px;
+    cursor: pointer;
+  }
+
+  &__radio-text {
+    position: relative;
+    appearance: none;
+  }
+
+  &__radio + &__radio-text::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    top: -2px;
+    left: -46px;
+  }
+
+  &__radio:checked + &__radio-text::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/form/radio_checked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13.5px 13.5px;
+    top: -2px;
+    left: -46px;
+  }
+
+  &__radio + &__radio-text:hover::before,
+  &__radio + &__radio-text:focus::before {
+    border-color: #bababa;
+  }
+
+  &__radio + &__radio-text:disabled,
+  &__radio + &__radio-text:disabled::before {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .program {
+    width: 630px;
+    min-height: 196px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    padding-top: 30px;
+    border: 1px solid #d9d9d9;
+
+    label {
+      width: calc(630px - 88px);
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0;
+      margin-bottom: 23px;
+      margin-left: 88px;
+    }
+
+    &__radio + &__radio-text::before {
+      width: 39.95px;
+      height: 40px;
+      top: -5px;
+      left: -58px;
+    }
+
+    &__radio:checked + &__radio-text::before {
+      width: 39.95px;
+      height: 40px;
+      background-image: url("../img/form/radio_checked.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 17.98px 18px;
+      top: -5px;
+      left: -58px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program {
+    min-height: 200px;
+    border: 1px solid #d9d9d9;
+    margin: 0;
+    box-sizing: border-box;
+    margin-bottom: 65px;
+
+    label {
+      width: calc(570px - 88px);
+    }
+  }
+}

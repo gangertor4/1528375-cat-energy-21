@@ -1,0 +1,132 @@
+.additional-card {
+  border-top: 1px solid #cdcdcd;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+    text-transform: uppercase;
+    margin-top: 13px;
+    margin-bottom: 9px;
+  }
+
+  &__feature-list tr {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 0;
+  }
+
+  &__feature:first-child {
+    margin-left: -5px;
+  }
+
+  &__feature {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    color: #444444;
+  }
+
+  &__feature span {
+    text-transform: uppercase;
+  }
+
+  &__buy-button {
+    min-height: 39px;
+    margin-bottom: 19px;
+  }
+}
+
+.additional-card:last-child {
+  border-bottom: 1px solid #cdcdcd;
+  margin-bottom: 39px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-card {
+    border-top: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    min-height: 139px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-left: 38px;
+    padding-right: 37px;
+
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+      margin: 0;
+      margin-top: 26px;
+    }
+
+    &__feature-list tr {
+      margin: 0;
+      width: fit-content;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__feature {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__feature:first-child {
+      margin-right: 50px;
+    }
+
+    &__buy-button {
+      width: 632px;
+      min-height: 38px;
+      margin-top: 16px;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-card {
+    width: 896px;
+    min-height: 72px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-left: none;
+    border-right: none;
+
+    &__title {
+      margin: 0;
+      margin-top: 25px;
+      margin-right: auto;
+    }
+
+    &__feature-list tr {
+      width: 285px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__buy-button {
+      width: 244px;
+      min-height: 40px;
+      margin: 0;
+      margin-left: 38px;
+    }
+  }
+
+  .additional-card:last-child {
+    margin-bottom: 0;
+  }
+}

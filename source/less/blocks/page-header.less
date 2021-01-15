@@ -1,0 +1,136 @@
+.page-header {
+  text-transform: uppercase;
+
+  &__logo-wrapper {
+    .mobile-max-width();
+    box-sizing: border-box;
+    min-height: 66px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    cursor: pointer;
+  }
+
+  &__logo-name {
+    background-image: url("../img/logo-name.svg");
+    width: 101px;
+    height: 18px;
+    margin-top: 14px;
+    margin-right: 14px;
+  }
+
+  &__nav-toggle--burger {
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    width: 21px;
+    height: 23px;
+    cursor: pointer;
+  }
+
+  &__nav-toggle--burger::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    top: 13px;
+    right: 1px;
+  }
+
+  &__nav-toggle--cross {
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    width: 21px;
+    height: 23px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 11px;
+
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 1px;
+      background-color: #000000;
+      top: 11px;
+      right: -2px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    .tablet-max-width();
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+
+    &__nav-toggle {
+      display: none;
+    }
+
+    &__logo-wrapper {
+      margin: 0;
+      padding: 0;
+      margin-top: 24px;
+    }
+
+    &__logo-wrapper:hover,
+    &__logo-wrapper:focus {
+      opacity: 0.8;
+    }
+
+    &__logo-wrapper:active {
+      opacity: 0.6;
+    }
+
+    &__logo-image {
+      width: 174px;
+      height: auto;
+    }
+
+    &__logo-name {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    .desktop-max-width();
+    display: flex;
+    justify-content: space-between;
+
+    &__nav-toggle {
+      display: none;
+    }
+
+    &__logo-wrapper {
+      margin-top: 53px;
+    }
+
+    &__logo-image {
+      width: 202px;
+      height: auto;
+    }
+  }
+}

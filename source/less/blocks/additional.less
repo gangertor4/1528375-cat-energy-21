@@ -1,0 +1,135 @@
+.additional {
+  .mobile-max-width();
+  margin: 0 auto;
+  border: none;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+  }
+
+  label {
+    .form-font();
+    color: #000000;
+    margin-bottom: 25px;
+    margin-left: 46px;
+    cursor: pointer;
+  }
+
+  &__checkbox-text {
+    position: relative;
+    appearance: none;
+  }
+
+  &__checkbox + &__checkbox-text::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #cdcdcd;
+    top: -3px;
+    left: -46px;
+  }
+
+  &__checkbox:checked + &__checkbox-text::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/form/tick.svg");
+    top: 0;
+    left: -43px;
+  }
+
+  &__checkbox + &__checkbox-text:hover::before,
+  &__checkbox + &__checkbox-text:focus::before {
+    border-color: #bababa;
+  }
+
+  &__checkbox:disabled + &__checkbox-text,
+  &__checkbox:disabled + &__checkbox-text:disabled::before {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additional {
+    max-width: 565px;
+    padding: 0;
+    margin-bottom: 17px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__title {
+      margin-bottom: 62px;
+    }
+
+    label {
+      font-size: 20px;
+      line-height: 30px;
+      width: 221px;
+      margin-left: 60px;
+      margin-bottom: 42px;
+    }
+
+    label:nth-child(even) {
+      margin-left: 123px;
+    }
+
+    &__checkbox + &__checkbox-text::before {
+      width: 40px;
+      height: 40px;
+      top: -4px;
+      left: -58px;
+    }
+
+    &__checkbox:checked + &__checkbox-text::after {
+      top: 1px;
+      left: -51px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional {
+    padding: 0;
+
+    &__title {
+      margin-left: 0;
+    }
+
+    &__wrapper {
+      width: max-content;
+      min-height: 40px;
+      margin-left: 59px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    label {
+      width: 221px;
+      margin: 0;
+    }
+
+    label:nth-child(even) {
+      margin-left: 0;
+    }
+
+    label:not(:last-child) {
+      margin-right: 104px;
+    }
+  }
+}

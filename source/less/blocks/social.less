@@ -1,0 +1,102 @@
+.social {
+  &__list {
+    .mobile-max-width();
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 63px;
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__item--vk svg {
+    width: 23px;
+    height: 16px;
+    fill: #666666;
+  }
+
+  &__item--insta svg {
+    margin-left: 36px;
+    margin-right: 33px;
+    width: 16px;
+    height: 16px;
+    fill: #666666;
+  }
+
+  &__item--fb svg {
+    width: 22px;
+    height: 22px;
+    fill: transparent;
+    stroke: #666666;
+  }
+
+  &__item--vk svg:hover,
+  &__item--vk svg:focus {
+    fill: #68b738;
+  }
+
+  &__item--insta svg:hover,
+  &__item--insta svg:focus {
+    fill: #68b738;
+  }
+
+  &__item--fb svg:hover,
+  &__item--fb svg:focus {
+    stroke: #68b738;
+  }
+
+  &__item--vk svg:active,
+  &__item--insta:active,
+  &__item--fb:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    &__list {
+      width: 129px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      border: none;
+      margin: 0;
+      padding: 0;
+      min-height: 33px;
+    }
+
+    &__item--vk svg {
+      width: 30px;
+      height: 22px;
+    }
+
+    &__item--insta svg {
+      width: 23px;
+      height: 23px;
+      margin: 0;
+      margin-left: 6px;
+    }
+
+    &__item--fb svg {
+      width: 28px;
+      height: 33px;
+      margin-top: -6px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    &__item--vk svg {
+      margin-top: -6px;
+    }
+  }
+}
