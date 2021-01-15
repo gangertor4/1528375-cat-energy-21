@@ -89,6 +89,14 @@
   &__input--phone:focus + &__icon-phone::after {
     background-image: url("../img/form/icon_phone_active.svg");
   }
+
+  &__input--email:invalid + &__icon-email::after {
+    background-image: url("../img/form/icon_email_error.svg");
+  }
+
+  &__input--phone:invalid + &__icon-phone::after {
+    background-image: url("../img/form/icon_phone_error.svg");
+  }  
 }
 
 @media (min-width: @tablet-width) {
