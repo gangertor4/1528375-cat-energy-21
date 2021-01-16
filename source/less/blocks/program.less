@@ -1,14 +1,19 @@
 .program {
-  max-width: 320px;
-  margin: 0 auto;
+  width: 100%;
   margin-bottom: 26px;
   padding: 0;
   padding-top: 28px;
-  display: flex;
-  flex-direction: column;
+  
   border: none;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  &__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
 
   label {
     .form-font();
@@ -67,12 +72,16 @@
     min-height: 196px;
     box-sizing: border-box;
     margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
     margin-top: 50px;
     margin-bottom: 75px;
     padding-top: 30px;
     border: 1px solid #d9d9d9;
+
+    &__wrapper {
+      width: 630px;
+      display: flex;
+      align-items: flex-start;
+    }
 
     label {
       width: calc(630px - 88px);
@@ -105,11 +114,16 @@
 
 @media (min-width: @desktop-width) {
   .program {
+    width: 568px;
     min-height: 200px;
     border: 1px solid #d9d9d9;
     margin: 0;
     box-sizing: border-box;
     margin-bottom: 65px;
+
+    &__wrapper {
+      width: auto;
+    }
 
     label {
       width: calc(570px - 88px);
