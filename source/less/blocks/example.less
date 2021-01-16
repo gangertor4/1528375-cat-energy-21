@@ -254,15 +254,14 @@
     justify-content: space-between;
     background: linear-gradient(180deg, #ffffff 0%, #ffffff 27%, #f2f2f2 27%, #f2f2f2 100%);
     z-index: -1;
+    position: relative;
 
     &__column-one {
       width: 436px;
-      // margin: 0;
       margin-top: 35px;
     }
 
     &__column-two {
-      // margin: 0;
       width: 609px;
     }
 
@@ -307,11 +306,7 @@
     }
 
     &__image-wrapper::before {
-      width: 65%;
-      height: 462px;
-      top: 195px;
-      right: 0;
-      background-size: cover;
+      display: none;
     }
 
     &__image--before {
@@ -333,6 +328,17 @@
       margin-top: 21px;
       position: relative;
       z-index: 3;
+    }
+
+    &__grey-background {
+      position: absolute;
+      width: 29.6%;
+      height: 462px;
+      top: 166px;
+      right: 0;
+      background-color: #eaeaea;
+      background-size: cover;
+      z-index: -1;
     }
   }
 }
