@@ -2,6 +2,8 @@ var navToggle = document.querySelector('.page-header__nav-toggle');
 var navMain = document.querySelector('.main-nav');
 
 navMain.classList.remove('main-nav--nojs');
+navToggle.classList.remove('page-header__nav-toggle--cross');
+navToggle.classList.add('page-header__nav-toggle--burger');
 
 navToggle.addEventListener('click', function() {
     if (navToggle.classList.contains('page-header__nav-toggle--burger')) {
