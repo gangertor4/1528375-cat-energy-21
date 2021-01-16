@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
@@ -166,10 +166,10 @@
   <footer class="page-footer">
     <div class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper">
-        <h3 class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</h3>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
-      </div>
+        <div class="contacts__wrapper">
+          <h3 class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</h3>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+        </div>
       <div class="contacts__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.32085871559023!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1610198221977!5m2!1sru!2sru"
@@ -179,31 +179,31 @@
     <div class="footer-bottom">
       <div class="footer-bottom__wrapper">
         <a>
-          <div class="footer-bottom__logo"></div>
+          <div class="footer-bottom__logo" aria-label="Магазин Cat Energy"></div>
         </a>
-          <ul class="footer-bottom__social social__list">
-            <li class="social__item social__item--vk">
-              <a href="http://www.vk.com" aria-label="Мы вконтакте">
-                <svg width="23" height="16">
-                  <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item social__item--insta">
-              <a href="http://www.instagram.com" aria-label="Мы в Инстаграме">
-                <svg width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon_instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item social__item--fb">
-              <a href="http://www.facebook.com" aria-label="Мы в Фейсбуке">
-                <svg width="22" height="22">
-                  <use xlink:href="img/sprite.svg#icon_facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <ul class="footer-bottom__social social__list">
+          <li class="social__item social__item--vk">
+            <a href="http://www.vk.com" aria-label="Мы вконтакте">
+              <svg width="23" height="16">
+                <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--insta">
+            <a href="http://www.instagram.com" aria-label="Мы в Инстаграме">
+              <svg width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon_instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--fb">
+            <a href="http://www.facebook.com" aria-label="Мы в Фейсбуке">
+              <svg width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon_facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
         <div class="footer-bottom__made-by made-by">
           <a class="made-by__name" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия">
             <span>HTML Academy</span>
