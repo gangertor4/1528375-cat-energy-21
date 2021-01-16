@@ -34,7 +34,7 @@
     border: 2px solid #444444;
   }
 
-  &__input:invalid {
+  &__input--error {
     border: 2px solid #ff8282;
   }
 
@@ -94,11 +94,11 @@
     background-image: url("../img/form/icon_phone_active.svg");
   }
 
-  &__input--email:invalid + &__icon-email::after {
+  &__input--email-error + &__icon-email::after {
     background-image: url("../img/form/icon_email_error.svg");
   }
 
-  &__input--phone:invalid + &__icon-phone::after {
+  &__input--phone-error + &__icon-phone::after {
     background-image: url("../img/form/icon_phone_error.svg");
   }
 }

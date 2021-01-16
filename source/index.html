@@ -106,58 +106,61 @@
       </ul>
     </section>
     <section class="example">
-      <div class="example__column-one">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="example__wrapper-stats">
-          <ul class="example__stats-list">
-            <li class="example__stats-item example__stats-item--first">
-              <dl>
-                <dt>5 кг</dt>
-                <dd>снижение веса</dd>
-              </dl>
-            </li>
-            <li class="example__stats-item example__stats-item--second">
-              <dl>
-                <dt>60 дней</dt>
-                <dd>затрачено времени</dd>
-              </dl>
-            </li>
-          </ul>
-          <p class="example__cash"><span>Затраты на питание: </span><span>15 000 руб</span> </p>
+      <div class="example__container">
+        <div class="example__column-one">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__wrapper-stats">
+            <ul class="example__stats-list">
+              <li class="example__stats-item example__stats-item--first">
+                <dl>
+                  <dt>5 кг</dt>
+                  <dd>снижение веса</dd>
+                </dl>
+              </li>
+              <li class="example__stats-item example__stats-item--second">
+                <dl>
+                  <dt>60 дней</dt>
+                  <dd>затрачено времени</dd>
+                </dl>
+              </li>
+            </ul>
+            <p class="example__cash"><span>Затраты на питание: </span><span>15 000 руб</span> </p>
+          </div>
         </div>
+        <div class="example__column-two">
+          <div class="example__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/cat-fatp.png 1x, img/cat-fatp@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
+              <img class="example__image example__image--before" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"
+                width="311" height="232" alt="Толстенький кот Борис">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/cat-skinnyp.png 1x, img/cat-skinnyp@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
+              <img class="example__image example__image--after" src="img/cat-skinny.png"
+                srcset="img/cat-skinny@2x.png 2x" width="251" height="240" alt="Похудевший кот Борис">
+            </picture>
+          </div>
+          <div class="example__slider slider">
+            <span class="slider__description slider__description--before">Было</span>
+            <div class="slider__bar slider__bar--before"></div>
+            <span class="slider__description slider__description--after">Стало</span>
+          </div>
+        </div>
+        <div class="example__grey-background"></div>
       </div>
-      <div class="example__column-two">
-        <div class="example__image-wrapper">
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
-            <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/cat-fatp.png 1x, img/cat-fatp@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
-            <img class="example__image example__image--before" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"
-              width="311" height="232" alt="Толстенький кот Борис">
-          </picture>
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
-            <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/cat-skinnyp.png 1x, img/cat-skinnyp@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
-            <img class="example__image example__image--after" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x"
-              width="251" height="240" alt="Похудевший кот Борис">
-          </picture>
-        </div>
-        <div class="example__slider slider">
-          <span class="slider__description slider__description--before">Было</span>
-          <div class="slider__bar slider__bar--before"></div>
-          <span class="slider__description slider__description--after">Стало</span>
-        </div>
-      </div>
-      <div class="example__grey-background"></div>
     </section>
   </main>
   <footer class="page-footer">
