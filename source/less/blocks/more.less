@@ -1,11 +1,14 @@
 .more {
-  width: 280px;
-  margin: 0 auto;
-  position: relative;
-  padding-bottom: 24px;
   border-bottom: 1px solid #ebebeb;
 
-  &::before {
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 24px;
+  }
+
+  &__wrapper::before {
     content: "";
     position: absolute;
     width: 30px;
@@ -55,20 +58,24 @@
 
 @media (min-width: @tablet-width) {
   .more {
-    box-sizing: border-box;
-    width: 324px;
-    height: 429px;
-    margin: 0;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 38px;
-    position: relative;
-    border: 2px solid #f2f2f2;
+    border: none;
+    
+    &__wrapper {
+      box-sizing: border-box;
+      width: 324px;
+      height: 429px;
+      margin: 0;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 38px;
+      position: relative;
+      border: 2px solid #f2f2f2;
+    }
 
-    &::before {
+    &__wrapper::before {
       width: 60px;
       height: 60px;
       top: 52px;
@@ -110,14 +117,16 @@
 
 @media (min-width: @desktop-width) {
   .more {
-    width: 245px;
-    min-height: 430px;
-    box-sizing: border-box;
-    padding-bottom: 40px;
-    margin: 0;
-    margin-top: 81px;
+    &__wrapper {
+      width: 245px;
+      min-height: 430px;
+      box-sizing: border-box;
+      padding-bottom: 40px;
+      margin: 0;
+      margin-top: 81px;
+    }
 
-    &::before {
+    &__wrapper::before {
       top: 51px;
       left: 92px;
     }

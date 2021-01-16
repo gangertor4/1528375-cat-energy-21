@@ -1,13 +1,20 @@
 .product-card {
-  width: 280px;
-  margin: 0 auto;
-  box-sizing: border-box;
   border-bottom: 2px solid #ebebeb;
-  padding-bottom: 23px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
+
+  &:first-child {
+    border-top: 2px solid #ebebeb;
+  }
+
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-bottom: 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
   &__image--68x86 {
     display: block;
@@ -96,18 +103,25 @@
 
 @media (min-width: @tablet-width) {
   .product-card {
-    width: 324px;
-    min-height: 430px;
-    margin: 0;
-    padding-bottom: 40px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     border: none;
-    margin-bottom: 93px;
-    background: linear-gradient(180deg, #ffffff 9%, #f2f2f2 9%);
+
+    &:first-child {
+      border: none;
+    }
+
+    &__wrapper {
+      width: 324px;
+      min-height: 430px;
+      margin: 0;
+      padding-bottom: 40px;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 93px;
+      background: linear-gradient(180deg, #ffffff 9%, #f2f2f2 9%);
+    }
 
     &__image--68x86,
     &__image--68x78 {
@@ -187,12 +201,14 @@
 
 @media (min-width: @desktop-width) {
   .product-card {
-    width: 245px;
-    min-height: 512px;
-    box-sizing: border-box;
-    background: linear-gradient(180deg, #ffffff 16%, #f2f2f2 16%);
-    margin-bottom: 62px;
-    padding-bottom: 0;
+    &__wrapper {
+      width: 245px;
+      min-height: 512px;
+      box-sizing: border-box;
+      background: linear-gradient(180deg, #ffffff 16%, #f2f2f2 16%);
+      margin-bottom: 62px;
+      padding-bottom: 0;
+    }
 
     &__image--68x86,
     &__image--68x78,
