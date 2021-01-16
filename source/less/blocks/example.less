@@ -111,7 +111,9 @@
     // margin: 0 auto;
     min-height: 1038px;
     background-color: transparent;
+    margin: 0;
     margin-top: 77px;
+    padding: 0;
     padding-top: 43px;
     padding-bottom: 0;
     border-top: 1px solid #e6e6e6;
@@ -192,7 +194,6 @@
     }
 
     &__column-two {
-      width: 100%;
       margin: 0 auto;
     }
 
@@ -241,7 +242,7 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    width: 1440px;
+    width: 100%;
     min-height: 630px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -252,13 +253,16 @@
     flex-direction: row;
     justify-content: space-between;
     background: linear-gradient(180deg, #ffffff 0%, #ffffff 27%, #f2f2f2 27%, #f2f2f2 100%);
+    z-index: -1;
 
     &__column-one {
       width: 436px;
+      // margin: 0;
       margin-top: 35px;
     }
 
     &__column-two {
+      // margin: 0;
       width: 609px;
     }
 
@@ -297,12 +301,17 @@
     }
 
     &__image-wrapper {
-      margin-top: -20px;
-      margin-left: 180px;
+      margin-top: -25px;
+      margin-left: 27px;
+      z-index: 0;
     }
 
     &__image-wrapper::before {
-      display: none;
+      width: 65%;
+      height: 462px;
+      top: 195px;
+      right: 0;
+      background-size: cover;
     }
 
     &__image--before {
@@ -322,6 +331,8 @@
       justify-content: space-between;
       margin-left: 38px;
       margin-top: 21px;
+      position: relative;
+      z-index: 3;
     }
   }
 }
