@@ -5,10 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
-  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
@@ -25,10 +23,10 @@
       <a href="index.html">
         <div class="page-header__logo-name"></div>
       </a>
-      <button class="page-header__nav-toggle page-header__nav-toggle--burger" type="button" aria-label="Открыть меню">
+      <button class="page-header__nav-toggle page-header__nav-toggle--cross" type="button" aria-label="Открыть меню">
       </button>
     </div>
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a href="index.html">
@@ -60,6 +58,7 @@
         <label>Возраст (лет):<input class="form-input__input" type="text" id="cat-age" placeholder="7" aria-label="Возраст питомца"></label>
       </fieldset>
       <fieldset class="program">
+        <div class="program__wrapper">
         <label>
           <input class="program__radio visually-hidden" type="radio" name="program" id="weight-loss" value="weight-loss" checked aria-label="Похудение"><span class="program__radio-text" tabindex="0">Похудение
         </span></label>
@@ -69,6 +68,7 @@
         <label>
           <input class="program__radio visually-hidden" type="radio" name="program" id="idk" value="idk" aria-label="Нужен ваш совет"><span class="program__radio-text" tabindex="0">Не знаю (нужен ваш совет)
         </span></label>
+        </div>
       </fieldset>
       <fieldset class="form-input form-input--contacts">
         <legend class="form-part-name form-part-name--contacts"><span>Контактные данные (владельца кота)</span></legend>
@@ -112,38 +112,38 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <a href="index.html">
-        <div class="footer-bottom__logo"></div>
-      </a>
-      <div class="footer-bottom__social social">
-        <ul class="social__list">
-          <li class="social__item social__item--vk">
-            <a href="http://www.vk.com" aria-label="Мы вконтакте">
-              <svg>
-                <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--insta">
-            <a href="http://www.instagram.com" aria-label="Мы в Инстаграме">
-              <svg>
-                <use xlink:href="img/sprite.svg#icon_instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--fb">
-            <a href="http://www.facbook.com" aria-label="Мы в Фейсбуке">
-              <svg>
-                <use xlink:href="img/sprite.svg#icon_facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-bottom__made-by made-by">
-        <a class="made-by__name" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия">
-          <span>HTML Academy</span>
+      <div class="footer-bottom__wrapper">
+        <a>
+          <div class="footer-bottom__logo" aria-label="Магазин Cat Energy"></div>
         </a>
+          <ul class="footer-bottom__social social__list">
+            <li class="social__item social__item--vk">
+              <a href="http://www.vk.com" aria-label="Мы вконтакте">
+                <svg width="23" height="16">
+                  <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--insta">
+              <a href="http://www.instagram.com" aria-label="Мы в Инстаграме">
+                <svg width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon_instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--fb">
+              <a href="http://www.facebook.com" aria-label="Мы в Фейсбуке">
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon_facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        <div class="footer-bottom__made-by made-by">
+          <a class="made-by__name" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия">
+            <span>HTML Academy</span>
+          </a>
+        </div>
       </div>
     </div>
   </footer>

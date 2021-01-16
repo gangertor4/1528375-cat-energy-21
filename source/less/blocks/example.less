@@ -107,14 +107,21 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    .tablet-max-width();
-    margin: 0 auto;
+    // .tablet-max-width();
+    // margin: 0 auto;
     min-height: 1038px;
     background-color: transparent;
+    margin: 0;
     margin-top: 77px;
+    padding: 0;
     padding-top: 43px;
     padding-bottom: 0;
     border-top: 1px solid #e6e6e6;
+
+    &__column-one {
+      .tablet-max-width();
+      margin: 0 auto;
+    }
 
     &__title {
       .tablet-max-width();
@@ -186,7 +193,12 @@
       margin-right: 5px;
     }
 
+    &__column-two {
+      margin: 0 auto;
+    }
+
     &__image-wrapper {
+      width: 100%;
       display: flex;
       min-height: 533px;
       margin: 0 auto;
@@ -198,11 +210,10 @@
     &__image-wrapper::before {
       content: "";
       position: absolute;
-      width: 768px;
+      width: 100%;
       height: 462px;
       background-color: #eaeaea;
       top: 171px;
-      right: -244 px;
       z-index: -1;
     }
 
@@ -231,25 +242,49 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    width: 1440px;
+    width: 100%;
     min-height: 630px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 110px 0 110px;
-    margin-top: 65px;
+    margin: 0;
+    padding: 0;
     border: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: linear-gradient(180deg, #ffffff 0%, #ffffff 27%, #f2f2f2 27%, #f2f2f2 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 33.5%, #f2f2f2 33.5%, #f2f2f2 100%);
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+
+    &__container {
+      width: 1220px;
+      min-height: 630px;
+      margin: 0 auto;
+      margin-top: 65px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
     &__column-one {
       width: 436px;
-      margin-top: 35px;
+      margin: 0;
+      margin-top: 33px;
     }
 
     &__column-two {
+      margin-left: 174px;
       width: 609px;
+      position: relative;
+      z-index: 0;
+    }
+
+    &__column-two::after {
+      content: "";
+      position: absolute;
+      height: 462px;
+      top: 168px;
+      right: -500%;
+      left: 320px;
+      background-color: #eaeaea;
+      background-size: cover;
+      z-index: -1;
     }
 
     &__title {
@@ -287,8 +322,8 @@
     }
 
     &__image-wrapper {
-      margin-top: -20px;
-      margin-left: 180px;
+      margin-top: -25px;
+      margin-left: 27px;
     }
 
     &__image-wrapper::before {
@@ -312,6 +347,8 @@
       justify-content: space-between;
       margin-left: 38px;
       margin-top: 21px;
+      position: relative;
+      z-index: 3;
     }
   }
 }
