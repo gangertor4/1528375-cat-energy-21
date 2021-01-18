@@ -1,6 +1,12 @@
 .page-header {
   text-transform: uppercase;
 
+  &__logo-wrapper--nojs {
+    .mobile-max-width();
+    display: flex;
+    justify-content: flex-start;
+  }
+
   &__logo-wrapper {
     .mobile-max-width();
     box-sizing: border-box;
@@ -21,6 +27,10 @@
     height: 18px;
     margin-top: 14px;
     margin-right: 14px;
+  }
+
+  &__nav-toggle--nojs {
+    display: none;
   }
 
   &__nav-toggle--burger {
@@ -72,10 +82,6 @@
 
     &::after {
       transform: rotate(-45deg);
-    }
-
-    &__nav-toggle--nojs {
-      display: none;
     }
   }
 }
